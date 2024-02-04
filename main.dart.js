@@ -65693,7 +65693,7 @@ ao(){return new A.Kn(B.m)}}
 A.Kn.prototype={
 lS(){var s=0,r=A.S(t.H),q=1,p,o=this,n,m,l,k,j,i
 var $async$lS=A.T(function(a,b){if(a===1){p=b
-s=q}while(true)switch(s){case 0:j=A.ee("http://dataservice.accuweather.com/forecasts/v1/hourly/1hour/36366?apikey=mrBxhCK5q9xdfxLM1TRbp0gx8XmSQEC8&language=pt-br&metric=true",0,null)
+s=q}while(true)switch(s){case 0:j=A.ee("https://dataservice.accuweather.com/forecasts/v1/hourly/1hour/36366?apikey=mrBxhCK5q9xdfxLM1TRbp0gx8XmSQEC8&language=pt-br&metric=true",0,null)
 q=3
 s=6
 return A.U(A.avT(j),$async$lS)
