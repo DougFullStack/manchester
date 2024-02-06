@@ -1,11 +1,11 @@
 {
-    "name": "novoweb",
-    "short_name": "novoweb",
+    "name": "Manchester",
+    "short_name": "Manchester",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
     "theme_color": "#0175C2",
-    "description": "A new Flutter project.",
+    "description": "Venha conhecer nosso grupo do bairro.",
     "orientation": "portrait-primary",
     "prefer_related_applications": false,
     "icons": [
