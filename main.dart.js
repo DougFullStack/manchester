@@ -67192,7 +67192,7 @@ c=A.aa(a1,k,e).w
 a=A.aa(a1,k,e).w
 s=A.cA(20)
 b=A.a([new A.ui(k),f,B.Gx,A.eV(A.a([new A.bN(new A.aI(8,8,8,8),d,k),new A.bN(new A.aI(8,8,8,8),A.c3(k,new A.bN(new A.aI(8,8,8,8),A.hr(A.il(A.a([A.SW("TER\xc7A QUINTA S\xc1BADO",B.bi,B.a6,A.dL(k,k,B.hx,k,k,k,k,k,k,k,k,(A.aa(a1,k,e).w.a.a+A.aa(a1,k,e).w.a.b)*0.022,k,k,B.ao,k,k,!0,k,k,k,k,k,k,k,k))],a0),!0,k,B.b6,!0),k,k),k),B.o,k,B.wH,new A.bp(B.j,k,k,s,k,k,B.J),k,(c.a.a+a.a.b)*0.12,k,k,k,k,b.a.a*0.35),k)],i),B.D,B.aX,B.H)],i)
-if(A.aa(a1,k,e).w.a.a<350)b.push(A.cF("CLIQUE EM CIMA DA IMAGEM ABAIXO PARA VER O WHATSAPP CORRESPONDENTE",A.dL(k,k,k,k,k,k,k,k,k,k,k,10,k,k,B.kg,k,k,!0,k,k,k,k,k,k,k,k),B.a6,k))
+if(A.aa(a1,k,e).w.a.a<450)b.push(A.cF("CLIQUE EM CIMA DA IMAGEM ABAIXO PARA VER O WHATSAPP CORRESPONDENTE",A.dL(k,k,k,k,k,k,k,k,k,k,k,10,k,k,B.kg,k,k,!0,k,k,k,k,k,k,k,k),B.a6,k))
 g=A.c3(k,A.dC(b,B.D,B.ap,B.H),B.o,k,k,new A.bp(k,g,k,k,k,k,B.J),k,k,k,k,k,k,k)
 f=A.c3(k,A.c3(k,new A.tB(k),B.o,k,k,k,k,k,k,k,k,k,k),B.o,B.i,k,k,k,k,k,k,k,k,k)
 d=A.aa(a1,k,e).w
@@ -67311,7 +67311,7 @@ a9=A.bM("assets/lanches.png",B.x)
 b0=$.ald
 b1=A.bM(b5,B.x)
 b2=$.aln
-return A.to(b3,A.acZ(A.eV(A.a([new A.br("\nAcabou o G\xe1s?",s,r,b3),new A.br("\nAssist\xeancia T\xe9cnica",q,p,b3),new A.br("\nBab\xe1 \n",o,n,b3),new A.br("\nBorracharia\n",m,l,b3),new A.br("Casas\nAlugar,\nComprar",k,j,b3),new A.br("\nCabeleleiro(a)\n",i,h,b3),new A.br("\nCarreto\n",g,f,b3),new A.br("\nCostureira\n",e,d,b3),new A.br("\nDiarista\n",c,b,b3),new A.br("\nEletricista\n",a,a0,b3),new A.br("\nEncanador\n",a1,a2,b3),new A.br("\nGuincho\n",a3,a4,b3),new A.br("\nImpress\xe3o\n",a5,a6,b3),new A.br("\nJardineiro\n",a7,a8,b3),new A.br("\nLanches\n",a9,b0,b3),new A.br(b4,b1,b2,b3),new A.br("\nManicure\n",A.bM("assets/manicure.jpeg",B.x),$.alk,b3),new A.br("\nMarido de aluguel",A.bM("assets/marido.jpeg",B.x),$.all,b3),new A.br("\nMercado\n",A.bM("assets/mercado.jpg",B.x),$.alo,b3),new A.br("\nMoto Taxi\n",A.bM("assets/mototaxi.jpeg",B.x),$.alp,b3),new A.br(b4,A.bM(b5,B.x),b2,b3),new A.br("\nPedreiro\n",A.bM("assets/pedreiro.png",B.x),$.alA,b3),new A.br("\nPintor\n",A.bM("assets/pintor.jpeg",B.x),$.alB,b3),new A.br("\nPadaria\nConfeitaria",A.bM("assets/padaria.png",B.x),$.alu,b3),new A.br("\nRoupas\n",A.bM("assets/roupas.jpeg",B.x),$.alJ,b3),new A.br("\nSerralheria\n",A.bM("assets/serralheiro.jpeg",B.x),$.alM,b3),new A.br("\nSorvetes\nGeladinhos",A.bM("assets/sorvete.png",B.x),$.alP,b3),new A.br("\nUber\n",A.bM("assets/uber.jpeg",B.x),$.alW,b3),new A.br("\nVerdureiro\n",A.bM("assets/verdureiro.jpeg",B.x),$.alY,b3),new A.br("\nOutros\n",A.bM("assets/outros.png",B.x),$.alt,b3)],t.E),B.D,B.ap,B.H),b6,B.wF,B.aT),B.ay,!1,b3,b3,b3,b3,b3,b3,b3,b3,b3,new A.a86(this),b3,b3,b3,b3,b3,b3,b3,b3)}}
+return A.to(b3,A.acZ(A.eV(A.a([new A.br("\nAcabou o G\xe1s?",s,r,b3),new A.br("\nAssist\xeancia T\xe9cnica",q,p,b3),new A.br("\nBab\xe1 \n",o,n,b3),new A.br("\nBorracharia\n",m,l,b3),new A.br("Casas\nAlugar,\nComprar",k,j,b3),new A.br("\nCabeleleiro(a)\n",i,h,b3),new A.br("\nCarreto\n",g,f,b3),new A.br("\nCostureira\n",e,d,b3),new A.br("\nDiarista\n",c,b,b3),new A.br("\nEletricista\n",a,a0,b3),new A.br("\nEncanador\n",a1,a2,b3),new A.br("\nGuincho\n",a3,a4,b3),new A.br("\nImpress\xe3o\n",a5,a6,b3),new A.br("\nJardineiro\n",a7,a8,b3),new A.br("\nLanches\n",a9,b0,b3),new A.br(b4,b1,b2,b3),new A.br("\nManicure\n",A.bM("assets/manicure.jpeg",B.x),$.alk,b3),new A.br("\nMarido de aluguel",A.bM("assets/marido.jpeg",B.x),$.all,b3),new A.br("\nMercado\n",A.bM("assets/mercado.jpg",B.x),$.alo,b3),new A.br("\nMoto Taxi\n",A.bM("assets/mototaxi.jpeg",B.x),$.alp,b3),new A.br(b4,A.bM(b5,B.x),b2,b3),new A.br("\nPedreiro\n",A.bM("assets/pedreiro.png",B.x),$.alA,b3),new A.br("\nPintor\n",A.bM("assets/pintor.jpeg",B.x),$.alB,b3),new A.br("\nDoces\nConfeitaria",A.bM("assets/padaria.png",B.x),$.alu,b3),new A.br("\nRoupas\n",A.bM("assets/roupas.jpeg",B.x),$.alJ,b3),new A.br("\nSerralheria\n",A.bM("assets/serralheiro.jpeg",B.x),$.alM,b3),new A.br("\nSorvetes\nGeladinhos",A.bM("assets/sorvete.png",B.x),$.alP,b3),new A.br("\nUber\n",A.bM("assets/uber.jpeg",B.x),$.alW,b3),new A.br("\nVerdureiro\n",A.bM("assets/verdureiro.jpeg",B.x),$.alY,b3),new A.br("\nOutros\n",A.bM("assets/outros.png",B.x),$.alt,b3)],t.E),B.D,B.ap,B.H),b6,B.wF,B.aT),B.ay,!1,b3,b3,b3,b3,b3,b3,b3,b3,b3,new A.a86(this),b3,b3,b3,b3,b3,b3,b3,b3)}}
 A.a87.prototype={
 $1(a){var s=this.a,r=s.d
 r===$&&A.b()
@@ -73239,7 +73239,7 @@ return A.y(s,s)}()
 $.alB=function(){var s=t.N
 return A.y(s,s)}()
 $.alu=function(){var s=t.N
-return A.ao(["\nLuzia Orion\nBolos e Doces"," 14991938133","\nMilene\nBolos e Doces","14988098131"],s,s)}()
+return A.ao(["\nLuzia Orion\nBolos e Doces"," 14991938133","\nMilene\nBolos e Doces","14988098131","\nAline\nChurros Gourmet","11966305547"],s,s)}()
 $.alJ=function(){var s=t.N
 return A.y(s,s)}()
 $.alM=function(){var s=t.N
@@ -73677,7 +73677,7 @@ i=j[2]
 h=[400*d/(d+27.13),400*c/(c+27.13),400*i/(i+27.13)]
 return new A.a3d(l,(40*h[0]+20*h[1]+h[2])/20*k,k,k,a1,1,q,m,A.Ai(m,0.25),1.48+e)})
 r($,"aCP","ao0",()=>{var q=t.N
-return A.ao(["\nAna Paula\nImpress\xf5es, Xerox...","assets/anaXerox.jpeg","\nDaiana\nManicure e Depiladora","assets/daianaManicure.jpeg","\nLuana\nGeladinho Gourmet","assets/luanaGelinho.jpeg","\nDouglas Rocha\nLimpeza de Terrenos","assets/douglasJardinagem.png","\nGeiza Fernanda\nDesigner Gr\xe1fico","assets/geizaDesigner.png","\nRosana\nG\xe1s e Queijo","assets/rosanaGas.png","\nPaulinho\nBorracharia Manchester","assets/paulinhoBorracharia.png","\nAndr\xe9 Personaliza\xe7\xf5es\n","assets/andre.png","\nLeila Lanches\nSabor Incompar\xe1vel","assets/leilaLanches.png","\nAna Paula\nPersonaliza\xe7\xf5es para Festas","assets/anaPersonalizacao.jpeg","\nMilene\nBolos e Doces","assets/mileneBolos.jpeg"],q,q)})
+return A.ao(["\nAna Paula\nImpress\xf5es, Xerox...","assets/anaXerox.jpeg","\nDaiana\nManicure e Depiladora","assets/daianaManicure.jpeg","\nLuana\nGeladinho Gourmet","assets/luanaGelinho.jpeg","\nDouglas Rocha\nLimpeza de Terrenos","assets/douglasJardinagem.png","\nGeiza Fernanda\nDesigner Gr\xe1fico","assets/geizaDesigner.png","\nRosana\nG\xe1s e Queijo","assets/rosanaGas.png","\nPaulinho\nBorracharia Manchester","assets/paulinhoBorracharia.png","\nAndr\xe9 Personaliza\xe7\xf5es\n","assets/andre.png","\nLeila Lanches\nSabor Incompar\xe1vel","assets/leilaLanches.png","\nAna Paula\nPersonaliza\xe7\xf5es para Festas","assets/anaPersonalizacao.jpeg","\nMilene\nBolos e Doces","assets/mileneBolos.jpeg","\nAline\nChurros Gourmet","assets/alineChurros.jpeg"],q,q)})
 s($,"aCQ","aeU",()=>new A.R0($.aeB(),null))
 s($,"aAB","amq",()=>new A.Yu(A.c_("/",!0,!1),A.c_("[^/]$",!0,!1),A.c_("^/",!0,!1)))
 s($,"aAD","OM",()=>new A.a3g(A.c_("[/\\\\]",!0,!1),A.c_("[^/\\\\]$",!0,!1),A.c_("^(\\\\\\\\[^\\\\]+\\\\[^\\\\/]+|[a-zA-Z]:[/\\\\])",!0,!1),A.c_("^[/\\\\](?![/\\\\])",!0,!1)))
