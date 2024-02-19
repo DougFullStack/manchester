@@ -7613,7 +7613,7 @@ if(s)return
 s=A.at("Illegal drive letter "+A.acS(a))
 throw A.e(s)},
 auv(a){var s
-if(a.length===0)return B.pK
+if(a.length===0)return B.pL
 s=A.aj7(a)
 s.NF(A.akf())
 return A.abz(s,t.N,t.yp)},
@@ -34459,14 +34459,14 @@ p=[]
 for(o=0;o<q;++o)p.push(r.j(s,o))
 return J.agl(p)},
 ga6w(){var s,r,q,p,o,n,m,l,k=this
-if(k.c!==0)return B.pJ
+if(k.c!==0)return B.pK
 s=k.e
 r=J.be(s)
 q=r.gv(s)
 p=k.d
 o=J.be(p)
 n=o.gv(p)-q-k.f
-if(q===0)return B.pJ
+if(q===0)return B.pK
 m=new A.dB(t.Hf)
 for(l=0;l<q;++l)m.m(0,new A.iZ(r.j(s,l)),o.j(p,n+l))
 return new A.li(m,t.qO)}}
@@ -37908,7 +37908,7 @@ s=A.a([],t.s)
 for(r=q;r<p;++r)if(o.charCodeAt(r)===47){s.push(B.d.a0(o,q,r))
 q=r+1}s.push(B.d.a0(o,q,p))
 return A.Dv(s,t.N)},
-gj_(){if(this.f>=this.r)return B.pK
+gj_(){if(this.f>=this.r)return B.pL
 var s=A.aj7(this.gkb())
 s.NF(A.akf())
 return A.abz(s,t.N,t.yp)},
@@ -54224,9 +54224,9 @@ q.push(A.f(r)+": "+A.f(p.j(0,r)))}return"SemanticsEvent("+B.b.ba(q,", ")+")"}}
 A.a2r.prototype={
 qC(){return A.aH(["message",this.b],t.N,t.z)}}
 A.Wa.prototype={
-qC(){return B.pM}}
+qC(){return B.pN}}
 A.a1p.prototype={
-qC(){return B.pM}}
+qC(){return B.pN}}
 A.AA.prototype={
 lc(a,b){return this.a6f(a,!0)},
 a6f(a,b){var s=0,r=A.S(t.N),q,p=this,o,n
@@ -58632,9 +58632,9 @@ q=p.gbI()}if(r||q==null)return
 o=s.c.gR()
 if(!(o instanceof A.C))return
 n=$.ay.ao$.z.j(0,b0.k4)
-m=n!=null?A.ag9(n,b3,s):B.pL
+m=n!=null?A.ag9(n,b3,s):B.pM
 l=$.ay.ao$.z.j(0,b1.k4)
-k=l!=null?A.ag9(l,b3,s):B.pL
+k=l!=null?A.ag9(l,b3,s):B.pM
 for(s=m.gcC(),s=s.gP(s),r=a9.gUX(),p=a9.a,j=a9.b,i=a9.gWP(),h=t.G,g=t.Q,f=t.u,e=t.wi,d=t.Y,c=t.m,b=d.h("ap<ab.T>"),a=t.k2;s.q();){a0=s.gE()
 a1=a0.a
 a2=a0.b
@@ -63457,7 +63457,7 @@ $2(a,b){if(!a.a)a.I(b)},
 $S:41}
 A.vQ.prototype={
 aj(){var s=null,r=t.c
-return new A.vR(new A.LK($.aE()),new A.bF(s,r),new A.bF(s,t.hA),new A.bF(s,r),B.pN,s,A.z(t.yb,t.M),s,!0,s,s,s,B.k)},
+return new A.vR(new A.LK($.aE()),new A.bF(s,r),new A.bF(s,t.hA),new A.bF(s,r),B.pO,s,A.z(t.yb,t.M),s,!0,s,s,s,B.k)},
 a7U(a,b){return this.f.$2(a,b)}}
 A.a_C.prototype={
 $1(a){return null},
@@ -63595,7 +63595,7 @@ OK(a){var s,r,q=this
 if(a===q.ay)s=!a||A.aX(q.a.c)===q.ch
 else s=!1
 if(s)return
-if(!a){q.at=B.pN
+if(!a){q.at=B.pO
 q.Ho()}else{switch(A.aX(q.a.c).a){case 1:q.at=A.aH([B.ii,new A.co(new A.a_y(q),new A.a_z(q),t.ok)],t.A,t.xR)
 break
 case 0:q.at=A.aH([B.ih,new A.co(new A.a_A(q),new A.a_B(q),t.Uv)],t.A,t.xR)
@@ -66945,7 +66945,7 @@ s.l()
 this.aO()},
 O(a){var s=null,r=this.d
 r===$&&A.b()
-return A.ti(s,A.acL(A.eS(A.a([new A.cX("\nAcabou o G\xe1s?",A.dY("assets/gas.png",B.a6),B.pR,s),new A.cX("\nBorracharia\n",A.dY("assets/borracheiro.jpeg",B.a6),B.pA,s),new A.cX("Casas\nAlugar,\nComprar",A.dY("assets/casa.jpeg",B.a6),B.pF,s),new A.cX("\nCabeleleiro(a)\n",A.dY("assets/cabelereiro.png",B.a6),B.pT,s),new A.cX("\nCarreto\n",A.dY("assets/carreto.png",B.a6),B.pO,s),new A.cX("\nDisk 24h\n",A.dY("assets/disk24h.jpeg",B.a6),B.pG,s),new A.cX("\nEletricista\n",A.dY("assets/eletricista.png",B.a6),B.pC,s),new A.cX("\nEngenheira\nCivil\n",A.dY("assets/engenheira.png",B.a6),B.pP,s),new A.cX("\nImpress\xe3o\n",A.dY("assets/impressao.png",B.a6),B.py,s),new A.cX("\nJardineiro\n",A.dY("assets/jardineiro.png",B.a6),B.pE,s),new A.cX("\nLanches\n",A.dY("assets/lanches.png",B.a6),B.pH,s),new A.cX("\nManicure\n",A.dY("assets/manicure.jpeg",B.a6),B.pB,s),new A.cX("\nMoto Taxi\n",A.dY("assets/mototaxi.jpeg",B.a6),B.pz,s),new A.cX("\nDoces\nConfeitaria",A.dY("assets/padaria.png",B.a6),B.pI,s),new A.cX("\nSorvetes\nGeladinhos",A.dY("assets/sorvete.png",B.a6),B.pD,s),new A.cX("\nOutros\n",A.dY("assets/outros.png",B.a6),B.pV,s)],t.F),B.F,B.ao,B.I),r,B.wR,B.aU),B.ax,!1,s,s,s,s,s,s,s,s,s,new A.a7T(this),s,s,s,s,s,s,s,s)}}
+return A.ti(s,A.acL(A.eS(A.a([new A.cX("\nAcabou o G\xe1s?",A.dY("assets/gas.png",B.a6),B.pR,s),new A.cX("\nBorracharia\n",A.dY("assets/borracheiro.jpeg",B.a6),B.pA,s),new A.cX("Casas\nAlugar,\nComprar",A.dY("assets/casa.jpeg",B.a6),B.pG,s),new A.cX("\nCabeleleiro(a)\n",A.dY("assets/cabelereiro.png",B.a6),B.pT,s),new A.cX("\nCarreto\n",A.dY("assets/carreto.png",B.a6),B.pP,s),new A.cX("\nDisk 24h\n",A.dY("assets/disk24h.jpeg",B.a6),B.pH,s),new A.cX("\nEletricista\n",A.dY("assets/eletricista.png",B.a6),B.pC,s),new A.cX("\nEngenheira\nCivil\n",A.dY("assets/engenheira.png",B.a6),B.pD,s),new A.cX("\nImpress\xe3o\n",A.dY("assets/impressao.png",B.a6),B.py,s),new A.cX("\nJardineiro\n",A.dY("assets/jardineiro.png",B.a6),B.pF,s),new A.cX("\nLanches\n",A.dY("assets/lanches.png",B.a6),B.pI,s),new A.cX("\nManicure\n",A.dY("assets/manicure.jpeg",B.a6),B.pB,s),new A.cX("\nMoto Taxi\n",A.dY("assets/mototaxi.jpeg",B.a6),B.pz,s),new A.cX("\nDoces\nConfeitaria",A.dY("assets/padaria.png",B.a6),B.pJ,s),new A.cX("\nSorvetes\nGeladinhos",A.dY("assets/sorvete.png",B.a6),B.pE,s),new A.cX("\nOutros\n",A.dY("assets/outros.png",B.a6),B.pV,s)],t.F),B.F,B.ao,B.I),r,B.wR,B.aU),B.ax,!1,s,s,s,s,s,s,s,s,s,new A.a7T(this),s,s,s,s,s,s,s,s)}}
 A.a7U.prototype={
 $1(a){var s,r,q=this.a,p=q.d
 p===$&&A.b()
@@ -66986,7 +66986,7 @@ break
 case 4:throw A.e("Could not launch "+q.ga0X())
 case 3:return A.Q(null,r)}})
 return A.R($async$o_,r)},
-O(a){var s=B.EV.gcC().ds(0)
+O(a){var s=B.EW.gcC().ds(0)
 B.b.OX(s)
 return new A.tR(new A.a5V(this,s),null)}}
 A.a5V.prototype={
@@ -70965,8 +70965,8 @@ B.EC=new A.oo(3,"spaceBetween")
 B.c6=new A.oo(4,"spaceAround")
 B.ht=new A.DA(0,"min")
 B.I=new A.DA(1,"max")
-B.FC={"\nAna Paula\nImpress\xf5es, Xerox...":0}
-B.py=new A.aK(B.FC,["14998320366"],t.w)
+B.FB={"\nAna Paula\nImpress\xf5es, Xerox...":0}
+B.py=new A.aK(B.FB,["14998320366"],t.w)
 B.qb=new A.j(16)
 B.qc=new A.j(17)
 B.d8=new A.j(18)
@@ -71246,12 +71246,14 @@ B.Fl={"\nDaiana\nManicure e Depiladora":0}
 B.pB=new A.aK(B.Fl,["14998293893"],t.w)
 B.FI={BU:0,DD:1,FX:2,TP:3,YD:4,ZR:5}
 B.bb=new A.aK(B.FI,["MM","DE","FR","TL","YE","CD"],t.w)
-B.FB={"\nMaur\xedcio\nEl\xe9trica":0}
-B.pC=new A.aK(B.FB,["14997655526"],t.w)
-B.Fn={alias:0,allScroll:1,basic:2,cell:3,click:4,contextMenu:5,copy:6,forbidden:7,grab:8,grabbing:9,help:10,move:11,none:12,noDrop:13,precise:14,progress:15,text:16,resizeColumn:17,resizeDown:18,resizeDownLeft:19,resizeDownRight:20,resizeLeft:21,resizeLeftRight:22,resizeRight:23,resizeRow:24,resizeUp:25,resizeUpDown:26,resizeUpLeft:27,resizeUpRight:28,resizeUpLeftDownRight:29,resizeUpRightDownLeft:30,verticalText:31,wait:32,zoomIn:33,zoomOut:34}
-B.EI=new A.aK(B.Fn,["alias","all-scroll","default","cell","pointer","context-menu","copy","not-allowed","grab","grabbing","help","move","none","no-drop","crosshair","progress","text","col-resize","s-resize","sw-resize","se-resize","w-resize","ew-resize","e-resize","row-resize","n-resize","ns-resize","nw-resize","ne-resize","nwse-resize","nesw-resize","vertical-text","wait","zoom-in","zoom-out"],t.w)
+B.FA={"\nMaur\xedcio\nEl\xe9trica":0}
+B.pC=new A.aK(B.FA,["14997655526"],t.w)
+B.Fm={alias:0,allScroll:1,basic:2,cell:3,click:4,contextMenu:5,copy:6,forbidden:7,grab:8,grabbing:9,help:10,move:11,none:12,noDrop:13,precise:14,progress:15,text:16,resizeColumn:17,resizeDown:18,resizeDownLeft:19,resizeDownRight:20,resizeLeft:21,resizeLeftRight:22,resizeRight:23,resizeRow:24,resizeUp:25,resizeUpDown:26,resizeUpLeft:27,resizeUpRight:28,resizeUpLeftDownRight:29,resizeUpRightDownLeft:30,verticalText:31,wait:32,zoomIn:33,zoomOut:34}
+B.EI=new A.aK(B.Fm,["alias","all-scroll","default","cell","pointer","context-menu","copy","not-allowed","grab","grabbing","help","move","none","no-drop","crosshair","progress","text","col-resize","s-resize","sw-resize","se-resize","w-resize","ew-resize","e-resize","row-resize","n-resize","ns-resize","nw-resize","ne-resize","nwse-resize","nesw-resize","vertical-text","wait","zoom-in","zoom-out"],t.w)
 B.FH={type:0}
 B.EJ=new A.aK(B.FH,["line"],t.w)
+B.Fz={"\nFernanda\nEngenheira Civil":0}
+B.pD=new A.aK(B.Fz,["14996735517"],t.w)
 B.q4={AVRInput:0,AVRPower:1,Accel:2,Accept:3,Again:4,AllCandidates:5,Alphanumeric:6,AltGraph:7,AppSwitch:8,ArrowDown:9,ArrowLeft:10,ArrowRight:11,ArrowUp:12,Attn:13,AudioBalanceLeft:14,AudioBalanceRight:15,AudioBassBoostDown:16,AudioBassBoostToggle:17,AudioBassBoostUp:18,AudioFaderFront:19,AudioFaderRear:20,AudioSurroundModeNext:21,AudioTrebleDown:22,AudioTrebleUp:23,AudioVolumeDown:24,AudioVolumeMute:25,AudioVolumeUp:26,Backspace:27,BrightnessDown:28,BrightnessUp:29,BrowserBack:30,BrowserFavorites:31,BrowserForward:32,BrowserHome:33,BrowserRefresh:34,BrowserSearch:35,BrowserStop:36,Call:37,Camera:38,CameraFocus:39,Cancel:40,CapsLock:41,ChannelDown:42,ChannelUp:43,Clear:44,Close:45,ClosedCaptionToggle:46,CodeInput:47,ColorF0Red:48,ColorF1Green:49,ColorF2Yellow:50,ColorF3Blue:51,ColorF4Grey:52,ColorF5Brown:53,Compose:54,ContextMenu:55,Convert:56,Copy:57,CrSel:58,Cut:59,DVR:60,Delete:61,Dimmer:62,DisplaySwap:63,Eisu:64,Eject:65,End:66,EndCall:67,Enter:68,EraseEof:69,Esc:70,Escape:71,ExSel:72,Execute:73,Exit:74,F1:75,F10:76,F11:77,F12:78,F13:79,F14:80,F15:81,F16:82,F17:83,F18:84,F19:85,F2:86,F20:87,F21:88,F22:89,F23:90,F24:91,F3:92,F4:93,F5:94,F6:95,F7:96,F8:97,F9:98,FavoriteClear0:99,FavoriteClear1:100,FavoriteClear2:101,FavoriteClear3:102,FavoriteRecall0:103,FavoriteRecall1:104,FavoriteRecall2:105,FavoriteRecall3:106,FavoriteStore0:107,FavoriteStore1:108,FavoriteStore2:109,FavoriteStore3:110,FinalMode:111,Find:112,Fn:113,FnLock:114,GoBack:115,GoHome:116,GroupFirst:117,GroupLast:118,GroupNext:119,GroupPrevious:120,Guide:121,GuideNextDay:122,GuidePreviousDay:123,HangulMode:124,HanjaMode:125,Hankaku:126,HeadsetHook:127,Help:128,Hibernate:129,Hiragana:130,HiraganaKatakana:131,Home:132,Hyper:133,Info:134,Insert:135,InstantReplay:136,JunjaMode:137,KanaMode:138,KanjiMode:139,Katakana:140,Key11:141,Key12:142,LastNumberRedial:143,LaunchApplication1:144,LaunchApplication2:145,LaunchAssistant:146,LaunchCalendar:147,LaunchContacts:148,LaunchControlPanel:149,LaunchMail:150,LaunchMediaPlayer:151,LaunchMusicPlayer:152,LaunchPhone:153,LaunchScreenSaver:154,LaunchSpreadsheet:155,LaunchWebBrowser:156,LaunchWebCam:157,LaunchWordProcessor:158,Link:159,ListProgram:160,LiveContent:161,Lock:162,LogOff:163,MailForward:164,MailReply:165,MailSend:166,MannerMode:167,MediaApps:168,MediaAudioTrack:169,MediaClose:170,MediaFastForward:171,MediaLast:172,MediaPause:173,MediaPlay:174,MediaPlayPause:175,MediaRecord:176,MediaRewind:177,MediaSkip:178,MediaSkipBackward:179,MediaSkipForward:180,MediaStepBackward:181,MediaStepForward:182,MediaStop:183,MediaTopMenu:184,MediaTrackNext:185,MediaTrackPrevious:186,MicrophoneToggle:187,MicrophoneVolumeDown:188,MicrophoneVolumeMute:189,MicrophoneVolumeUp:190,ModeChange:191,NavigateIn:192,NavigateNext:193,NavigateOut:194,NavigatePrevious:195,New:196,NextCandidate:197,NextFavoriteChannel:198,NextUserProfile:199,NonConvert:200,Notification:201,NumLock:202,OnDemand:203,Open:204,PageDown:205,PageUp:206,Pairing:207,Paste:208,Pause:209,PinPDown:210,PinPMove:211,PinPToggle:212,PinPUp:213,Play:214,PlaySpeedDown:215,PlaySpeedReset:216,PlaySpeedUp:217,Power:218,PowerOff:219,PreviousCandidate:220,Print:221,PrintScreen:222,Process:223,Props:224,RandomToggle:225,RcLowBattery:226,RecordSpeedNext:227,Redo:228,RfBypass:229,Romaji:230,STBInput:231,STBPower:232,Save:233,ScanChannelsToggle:234,ScreenModeNext:235,ScrollLock:236,Select:237,Settings:238,ShiftLevel5:239,SingleCandidate:240,Soft1:241,Soft2:242,Soft3:243,Soft4:244,Soft5:245,Soft6:246,Soft7:247,Soft8:248,SpeechCorrectionList:249,SpeechInputToggle:250,SpellCheck:251,SplitScreenToggle:252,Standby:253,Subtitle:254,Super:255,Symbol:256,SymbolLock:257,TV:258,TV3DMode:259,TVAntennaCable:260,TVAudioDescription:261,TVAudioDescriptionMixDown:262,TVAudioDescriptionMixUp:263,TVContentsMenu:264,TVDataService:265,TVInput:266,TVInputComponent1:267,TVInputComponent2:268,TVInputComposite1:269,TVInputComposite2:270,TVInputHDMI1:271,TVInputHDMI2:272,TVInputHDMI3:273,TVInputHDMI4:274,TVInputVGA1:275,TVMediaContext:276,TVNetwork:277,TVNumberEntry:278,TVPower:279,TVRadioService:280,TVSatellite:281,TVSatelliteBS:282,TVSatelliteCS:283,TVSatelliteToggle:284,TVTerrestrialAnalog:285,TVTerrestrialDigital:286,TVTimer:287,Tab:288,Teletext:289,Undo:290,Unidentified:291,VideoModeNext:292,VoiceDial:293,WakeUp:294,Wink:295,Zenkaku:296,ZenkakuHankaku:297,ZoomIn:298,ZoomOut:299,ZoomToggle:300}
 B.n8=new A.d(4294970632)
 B.n9=new A.d(4294970633)
@@ -71550,12 +71552,12 @@ B.EK=new A.aK(B.q4,[B.n8,B.n9,B.kP,B.l3,B.l4,B.ls,B.lt,B.e9,B.oC,B.aW,B.aL,B.aM,
 B.EL=new A.aK(B.q4,[4294970632,4294970633,4294967553,4294968577,4294968578,4294969089,4294969090,4294967555,4294971393,4294968065,4294968066,4294968067,4294968068,4294968579,4294970625,4294970626,4294970627,4294970882,4294970628,4294970629,4294970630,4294970631,4294970884,4294970885,4294969871,4294969873,4294969872,4294967304,4294968833,4294968834,4294970369,4294970370,4294970371,4294970372,4294970373,4294970374,4294970375,4294971394,4294968835,4294971395,4294968580,4294967556,4294970634,4294970635,4294968321,4294969857,4294970642,4294969091,4294970636,4294970637,4294970638,4294970639,4294970640,4294970641,4294969092,4294968581,4294969093,4294968322,4294968323,4294968324,4294970703,4294967423,4294970643,4294970644,4294969108,4294968836,4294968069,4294971396,4294967309,4294968325,4294967323,4294967323,4294968326,4294968582,4294970645,4294969345,4294969354,4294969355,4294969356,4294969357,4294969358,4294969359,4294969360,4294969361,4294969362,4294969363,4294969346,4294969364,4294969365,4294969366,4294969367,4294969368,4294969347,4294969348,4294969349,4294969350,4294969351,4294969352,4294969353,4294970646,4294970647,4294970648,4294970649,4294970650,4294970651,4294970652,4294970653,4294970654,4294970655,4294970656,4294970657,4294969094,4294968583,4294967558,4294967559,4294971397,4294971398,4294969095,4294969096,4294969097,4294969098,4294970658,4294970659,4294970660,4294969105,4294969106,4294969109,4294971399,4294968584,4294968841,4294969110,4294969111,4294968070,4294967560,4294970661,4294968327,4294970662,4294969107,4294969112,4294969113,4294969114,4294971905,4294971906,4294971400,4294970118,4294970113,4294970126,4294970114,4294970124,4294970127,4294970115,4294970116,4294970117,4294970125,4294970119,4294970120,4294970121,4294970122,4294970123,4294970663,4294970664,4294970665,4294970666,4294968837,4294969858,4294969859,4294969860,4294971402,4294970667,4294970704,4294970715,4294970668,4294970669,4294970670,4294970671,4294969861,4294970672,4294970673,4294970674,4294970705,4294970706,4294970707,4294970708,4294969863,4294970709,4294969864,4294969865,4294970886,4294970887,4294970889,4294970888,4294969099,4294970710,4294970711,4294970712,4294970713,4294969866,4294969100,4294970675,4294970676,4294969101,4294971401,4294967562,4294970677,4294969867,4294968071,4294968072,4294970714,4294968328,4294968585,4294970678,4294970679,4294970680,4294970681,4294968586,4294970682,4294970683,4294970684,4294968838,4294968839,4294969102,4294969868,4294968840,4294969103,4294968587,4294970685,4294970686,4294970687,4294968329,4294970688,4294969115,4294970693,4294970694,4294969869,4294970689,4294970690,4294967564,4294968588,4294970691,4294967569,4294969104,4294969601,4294969602,4294969603,4294969604,4294969605,4294969606,4294969607,4294969608,4294971137,4294971138,4294969870,4294970692,4294968842,4294970695,4294967566,4294967567,4294967568,4294970697,4294971649,4294971650,4294971651,4294971652,4294971653,4294971654,4294971655,4294970698,4294971656,4294971657,4294971658,4294971659,4294971660,4294971661,4294971662,4294971663,4294971664,4294971665,4294971666,4294971667,4294970699,4294971668,4294971669,4294971670,4294971671,4294971672,4294971673,4294971674,4294971675,4294967305,4294970696,4294968330,4294967297,4294970700,4294971403,4294968843,4294970701,4294969116,4294969117,4294968589,4294968590,4294970702],t.eL)
 B.FM={Abort:0,Again:1,AltLeft:2,AltRight:3,ArrowDown:4,ArrowLeft:5,ArrowRight:6,ArrowUp:7,AudioVolumeDown:8,AudioVolumeMute:9,AudioVolumeUp:10,Backquote:11,Backslash:12,Backspace:13,BracketLeft:14,BracketRight:15,BrightnessDown:16,BrightnessUp:17,BrowserBack:18,BrowserFavorites:19,BrowserForward:20,BrowserHome:21,BrowserRefresh:22,BrowserSearch:23,BrowserStop:24,CapsLock:25,Comma:26,ContextMenu:27,ControlLeft:28,ControlRight:29,Convert:30,Copy:31,Cut:32,Delete:33,Digit0:34,Digit1:35,Digit2:36,Digit3:37,Digit4:38,Digit5:39,Digit6:40,Digit7:41,Digit8:42,Digit9:43,DisplayToggleIntExt:44,Eject:45,End:46,Enter:47,Equal:48,Esc:49,Escape:50,F1:51,F10:52,F11:53,F12:54,F13:55,F14:56,F15:57,F16:58,F17:59,F18:60,F19:61,F2:62,F20:63,F21:64,F22:65,F23:66,F24:67,F3:68,F4:69,F5:70,F6:71,F7:72,F8:73,F9:74,Find:75,Fn:76,FnLock:77,GameButton1:78,GameButton10:79,GameButton11:80,GameButton12:81,GameButton13:82,GameButton14:83,GameButton15:84,GameButton16:85,GameButton2:86,GameButton3:87,GameButton4:88,GameButton5:89,GameButton6:90,GameButton7:91,GameButton8:92,GameButton9:93,GameButtonA:94,GameButtonB:95,GameButtonC:96,GameButtonLeft1:97,GameButtonLeft2:98,GameButtonMode:99,GameButtonRight1:100,GameButtonRight2:101,GameButtonSelect:102,GameButtonStart:103,GameButtonThumbLeft:104,GameButtonThumbRight:105,GameButtonX:106,GameButtonY:107,GameButtonZ:108,Help:109,Home:110,Hyper:111,Insert:112,IntlBackslash:113,IntlRo:114,IntlYen:115,KanaMode:116,KeyA:117,KeyB:118,KeyC:119,KeyD:120,KeyE:121,KeyF:122,KeyG:123,KeyH:124,KeyI:125,KeyJ:126,KeyK:127,KeyL:128,KeyM:129,KeyN:130,KeyO:131,KeyP:132,KeyQ:133,KeyR:134,KeyS:135,KeyT:136,KeyU:137,KeyV:138,KeyW:139,KeyX:140,KeyY:141,KeyZ:142,KeyboardLayoutSelect:143,Lang1:144,Lang2:145,Lang3:146,Lang4:147,Lang5:148,LaunchApp1:149,LaunchApp2:150,LaunchAssistant:151,LaunchControlPanel:152,LaunchMail:153,LaunchScreenSaver:154,MailForward:155,MailReply:156,MailSend:157,MediaFastForward:158,MediaPause:159,MediaPlay:160,MediaPlayPause:161,MediaRecord:162,MediaRewind:163,MediaSelect:164,MediaStop:165,MediaTrackNext:166,MediaTrackPrevious:167,MetaLeft:168,MetaRight:169,MicrophoneMuteToggle:170,Minus:171,NonConvert:172,NumLock:173,Numpad0:174,Numpad1:175,Numpad2:176,Numpad3:177,Numpad4:178,Numpad5:179,Numpad6:180,Numpad7:181,Numpad8:182,Numpad9:183,NumpadAdd:184,NumpadBackspace:185,NumpadClear:186,NumpadClearEntry:187,NumpadComma:188,NumpadDecimal:189,NumpadDivide:190,NumpadEnter:191,NumpadEqual:192,NumpadMemoryAdd:193,NumpadMemoryClear:194,NumpadMemoryRecall:195,NumpadMemoryStore:196,NumpadMemorySubtract:197,NumpadMultiply:198,NumpadParenLeft:199,NumpadParenRight:200,NumpadSubtract:201,Open:202,PageDown:203,PageUp:204,Paste:205,Pause:206,Period:207,Power:208,PrintScreen:209,PrivacyScreenToggle:210,Props:211,Quote:212,Resume:213,ScrollLock:214,Select:215,SelectTask:216,Semicolon:217,ShiftLeft:218,ShiftRight:219,ShowAllWindows:220,Slash:221,Sleep:222,Space:223,Super:224,Suspend:225,Tab:226,Turbo:227,Undo:228,WakeUp:229,ZoomToggle:230}
 B.EM=new A.aK(B.FM,[458907,458873,458978,458982,458833,458832,458831,458834,458881,458879,458880,458805,458801,458794,458799,458800,786544,786543,786980,786986,786981,786979,786983,786977,786982,458809,458806,458853,458976,458980,458890,458876,458875,458828,458791,458782,458783,458784,458785,458786,458787,458788,458789,458790,65717,786616,458829,458792,458798,458793,458793,458810,458819,458820,458821,458856,458857,458858,458859,458860,458861,458862,458811,458863,458864,458865,458866,458867,458812,458813,458814,458815,458816,458817,458818,458878,18,19,392961,392970,392971,392972,392973,392974,392975,392976,392962,392963,392964,392965,392966,392967,392968,392969,392977,392978,392979,392980,392981,392982,392983,392984,392985,392986,392987,392988,392989,392990,392991,458869,458826,16,458825,458852,458887,458889,458888,458756,458757,458758,458759,458760,458761,458762,458763,458764,458765,458766,458767,458768,458769,458770,458771,458772,458773,458774,458775,458776,458777,458778,458779,458780,458781,787101,458896,458897,458898,458899,458900,786836,786834,786891,786847,786826,786865,787083,787081,787084,786611,786609,786608,786637,786610,786612,786819,786615,786613,786614,458979,458983,24,458797,458891,458835,458850,458841,458842,458843,458844,458845,458846,458847,458848,458849,458839,458939,458968,458969,458885,458851,458836,458840,458855,458963,458962,458961,458960,458964,458837,458934,458935,458838,458868,458830,458827,458877,458824,458807,458854,458822,23,458915,458804,21,458823,458871,786850,458803,458977,458981,787103,458808,65666,458796,17,20,458795,22,458874,65667,786994],t.eL)
-B.Fw={"\nLuana\nGeladinho Gourmet":0}
-B.pD=new A.aK(B.Fw,["14998385283"],t.w)
+B.Fu={"\nLuana\nGeladinho Gourmet":0}
+B.pE=new A.aK(B.Fu,["14998385283"],t.w)
 B.FG={"\nDouglas Rocha\nLimpeza de Terrenos":0}
-B.pE=new A.aK(B.FG,["14988208364"],t.w)
-B.Fr={"\nPaula\nVenda de terreno no\nManchester":0}
-B.pF=new A.aK(B.Fr,["11981328322"],t.w)
+B.pF=new A.aK(B.FG,["14988208364"],t.w)
+B.Fq={"\nPaula\nVenda de terreno no\nManchester":0}
+B.pG=new A.aK(B.Fq,["11981328322"],t.w)
 B.kM=new A.d(32)
 B.eP=new A.ag(B.kM,!1,!1,!1,!1)
 B.eG=new A.ag(B.e8,!1,!1,!1,!1)
@@ -71582,8 +71584,8 @@ B.H7=new A.e0(B.bf,B.eC)
 B.H9=new A.e0(B.cs,B.eC)
 B.v2=new A.e0(B.L,B.hV)
 B.EN=new A.c6([B.eP,B.xT,B.eG,B.iX,B.Ip,B.iX,B.I4,B.xd,B.I5,B.xJ,B.I6,B.xR,B.eJ,B.H8,B.eK,B.H6,B.eN,B.H7,B.eO,B.H9,B.dp,B.v2,B.dq,B.hW],t.Fp)
-B.Ft={"\nMateus\nDisk 24h":0,"\nAna\nDisk 24h":1}
-B.pG=new A.aK(B.Ft,["14998537849","14997144611"],t.w)
+B.Fs={"\nMateus\nDisk 24h":0,"\nAna\nDisk 24h":1}
+B.pH=new A.aK(B.Fs,["14998537849","14997144611"],t.w)
 B.Do=new A.d(33)
 B.Dp=new A.d(34)
 B.Dq=new A.d(35)
@@ -71728,22 +71730,20 @@ B.ex=new A.aI(2,2)
 B.fi=new A.ce(B.ex,B.ex,B.ex,B.ex)
 B.EP=new A.c6([B.el,null,B.pY,B.fi,B.F3,null,B.hw,B.fi,B.em,null],A.a0("c6<ka,ce?>"))
 B.FL={"\nLeila Lanches\nFa\xe7a seu Pedido!":0}
-B.pH=new A.aK(B.FL,["14998031216"],t.w)
+B.pI=new A.aK(B.FL,["14998031216"],t.w)
 B.Fk={"\nLuzia Orion\nBolos e Doces":0,"\nMilene\nBolos e Doces":1,"\nAline\nChurros Gourmet":2}
-B.pI=new A.aK(B.Fk,[" 14991938133","14988098131","11966305547"],t.w)
-B.pL=new A.aK(B.aO,[],A.a0("aK<B,pO>"))
+B.pJ=new A.aK(B.Fk,[" 14991938133","14988098131","11966305547"],t.w)
+B.pM=new A.aK(B.aO,[],A.a0("aK<B,pO>"))
 B.EU=new A.aK(B.aO,[],A.a0("aK<cJ,cJ>"))
 B.eg=new A.aK(B.aO,[],A.a0("aK<p2,aC>"))
 B.ER=new A.aK(B.aO,[],A.a0("aK<t,h(W)>"))
-B.pK=new A.aK(B.aO,[],A.a0("aK<t,L<t>>"))
-B.pM=new A.aK(B.aO,[],A.a0("aK<t,@>"))
-B.pJ=new A.aK(B.aO,[],A.a0("aK<wm,@>"))
+B.pL=new A.aK(B.aO,[],A.a0("aK<t,L<t>>"))
+B.pN=new A.aK(B.aO,[],A.a0("aK<t,@>"))
+B.pK=new A.aK(B.aO,[],A.a0("aK<wm,@>"))
 B.ES=new A.aK(B.aO,[],A.a0("aK<eW,cn>"))
-B.pN=new A.aK(B.aO,[],A.a0("aK<eW,lD<cn>>"))
-B.Fm={"\nAna Paula\nImpress\xf5es, Xerox...":0,"\nDaiana\nManicure e Depiladora":1,"\nLuana\nGeladinho Gourmet":2,"\nDouglas Rocha\nLimpeza de Terrenos":3,"\nGeiza Fernanda\nDesigner Gr\xe1fico":4,"\nRosana\nG\xe1s e Queijo":5,"\nPaulinho\nBorracharia Manchester":6,"\nAndr\xe9 Personaliza\xe7\xf5es\n":7,"\nLeila Lanches\nSabor Incompar\xe1vel":8,"\nAna Paula\nPersonaliza\xe7\xf5es para Festas":9,"\nMilene\nBolos e Doces":10,"\nAline\nChurros Gourmet":11,"\nAna\nDisk 24h":12,"\nFernanda Campe\xe3o\n":13}
-B.EV=new A.aK(B.Fm,["assets/anaXerox.jpeg","assets/daianaManicure.jpeg","assets/luanaGelinho.jpeg","assets/douglasJardinagem.png","assets/geizaDesigner.png","assets/rosanaGas.png","assets/paulinhoBorracharia.png","assets/andre.png","assets/leilaLanches.png","assets/anaPersonalizacao.jpeg","assets/mileneBolos.jpeg","assets/alineChurros.jpeg","assets/anaDisk.jpeg","fernandaEngenheeira.png"],t.w)
-B.Fs={"\nMatheus\nCarreto":0}
-B.pO=new A.aK(B.Fs,["14997216202"],t.w)
+B.pO=new A.aK(B.aO,[],A.a0("aK<eW,lD<cn>>"))
+B.Fr={"\nMatheus\nCarreto":0}
+B.pP=new A.aK(B.Fr,["14997216202"],t.w)
 B.i6=new A.ag(B.aW,!1,!1,!0,!1)
 B.i3=new A.ag(B.aL,!1,!1,!0,!1)
 B.i4=new A.ag(B.aM,!1,!1,!0,!1)
@@ -71764,19 +71764,19 @@ B.eI=new A.ag(B.bD,!1,!1,!1,!1)
 B.eH=new A.ag(B.bE,!1,!1,!1,!1)
 B.vC=new A.ag(B.bD,!0,!1,!1,!1)
 B.vB=new A.ag(B.bE,!0,!1,!1,!1)
-B.EW=new A.c6([B.i6,B.r,B.i3,B.r,B.i4,B.r,B.i5,B.r,B.vA,B.r,B.vx,B.r,B.vy,B.r,B.vz,B.r,B.i2,B.r,B.i7,B.r,B.eM,B.r,B.eL,B.r,B.eK,B.r,B.eN,B.r,B.eO,B.r,B.eJ,B.r,B.vt,B.r,B.vu,B.r,B.vv,B.r,B.vw,B.r,B.dp,B.r,B.dq,B.r,B.eI,B.r,B.eH,B.r,B.vC,B.r,B.vB,B.r,B.eP,B.r,B.eG,B.r],t.Fp)
-B.Fv={"\nFernanda Campe\xe3o\n":0}
-B.pP=new A.aK(B.Fv,["14996735517"],t.w)
-B.FD={in:0,iw:1,ji:2,jw:3,mo:4,aam:5,adp:6,aue:7,ayx:8,bgm:9,bjd:10,ccq:11,cjr:12,cka:13,cmk:14,coy:15,cqu:16,drh:17,drw:18,gav:19,gfx:20,ggn:21,gti:22,guv:23,hrr:24,ibi:25,ilw:26,jeg:27,kgc:28,kgh:29,koj:30,krm:31,ktr:32,kvs:33,kwq:34,kxe:35,kzj:36,kzt:37,lii:38,lmm:39,meg:40,mst:41,mwj:42,myt:43,nad:44,ncp:45,nnx:46,nts:47,oun:48,pcr:49,pmc:50,pmu:51,ppa:52,ppr:53,pry:54,puz:55,sca:56,skk:57,tdu:58,thc:59,thx:60,tie:61,tkk:62,tlw:63,tmp:64,tne:65,tnf:66,tsf:67,uok:68,xba:69,xia:70,xkh:71,xsj:72,ybd:73,yma:74,ymt:75,yos:76,yuu:77}
-B.aY=new A.aK(B.FD,["id","he","yi","jv","ro","aas","dz","ktz","nun","bcg","drl","rki","mom","cmr","xch","pij","quh","khk","prs","dev","vaj","gvr","nyc","duz","jal","opa","gal","oyb","tdf","kml","kwv","bmf","dtp","gdj","yam","tvd","dtp","dtp","raq","rmx","cir","mry","vaj","mry","xny","kdz","ngv","pij","vaj","adx","huw","phr","bfy","lcq","prt","pub","hle","oyb","dtp","tpo","oyb","ras","twm","weo","tyj","kak","prs","taj","ema","cax","acn","waw","suj","rki","lrr","mtm","zom","yug"],t.w)
-B.Fx={Abort:0,Again:1,AltLeft:2,AltRight:3,ArrowDown:4,ArrowLeft:5,ArrowRight:6,ArrowUp:7,AudioVolumeDown:8,AudioVolumeMute:9,AudioVolumeUp:10,Backquote:11,Backslash:12,Backspace:13,BracketLeft:14,BracketRight:15,BrightnessDown:16,BrightnessUp:17,BrowserBack:18,BrowserFavorites:19,BrowserForward:20,BrowserHome:21,BrowserRefresh:22,BrowserSearch:23,BrowserStop:24,CapsLock:25,Comma:26,ContextMenu:27,ControlLeft:28,ControlRight:29,Convert:30,Copy:31,Cut:32,Delete:33,Digit0:34,Digit1:35,Digit2:36,Digit3:37,Digit4:38,Digit5:39,Digit6:40,Digit7:41,Digit8:42,Digit9:43,DisplayToggleIntExt:44,Eject:45,End:46,Enter:47,Equal:48,Escape:49,Esc:50,F1:51,F10:52,F11:53,F12:54,F13:55,F14:56,F15:57,F16:58,F17:59,F18:60,F19:61,F2:62,F20:63,F21:64,F22:65,F23:66,F24:67,F3:68,F4:69,F5:70,F6:71,F7:72,F8:73,F9:74,Find:75,Fn:76,FnLock:77,GameButton1:78,GameButton10:79,GameButton11:80,GameButton12:81,GameButton13:82,GameButton14:83,GameButton15:84,GameButton16:85,GameButton2:86,GameButton3:87,GameButton4:88,GameButton5:89,GameButton6:90,GameButton7:91,GameButton8:92,GameButton9:93,GameButtonA:94,GameButtonB:95,GameButtonC:96,GameButtonLeft1:97,GameButtonLeft2:98,GameButtonMode:99,GameButtonRight1:100,GameButtonRight2:101,GameButtonSelect:102,GameButtonStart:103,GameButtonThumbLeft:104,GameButtonThumbRight:105,GameButtonX:106,GameButtonY:107,GameButtonZ:108,Help:109,Home:110,Hyper:111,Insert:112,IntlBackslash:113,IntlRo:114,IntlYen:115,KanaMode:116,KeyA:117,KeyB:118,KeyC:119,KeyD:120,KeyE:121,KeyF:122,KeyG:123,KeyH:124,KeyI:125,KeyJ:126,KeyK:127,KeyL:128,KeyM:129,KeyN:130,KeyO:131,KeyP:132,KeyQ:133,KeyR:134,KeyS:135,KeyT:136,KeyU:137,KeyV:138,KeyW:139,KeyX:140,KeyY:141,KeyZ:142,KeyboardLayoutSelect:143,Lang1:144,Lang2:145,Lang3:146,Lang4:147,Lang5:148,LaunchApp1:149,LaunchApp2:150,LaunchAssistant:151,LaunchControlPanel:152,LaunchMail:153,LaunchScreenSaver:154,MailForward:155,MailReply:156,MailSend:157,MediaFastForward:158,MediaPause:159,MediaPlay:160,MediaPlayPause:161,MediaRecord:162,MediaRewind:163,MediaSelect:164,MediaStop:165,MediaTrackNext:166,MediaTrackPrevious:167,MetaLeft:168,MetaRight:169,MicrophoneMuteToggle:170,Minus:171,NonConvert:172,NumLock:173,Numpad0:174,Numpad1:175,Numpad2:176,Numpad3:177,Numpad4:178,Numpad5:179,Numpad6:180,Numpad7:181,Numpad8:182,Numpad9:183,NumpadAdd:184,NumpadBackspace:185,NumpadClear:186,NumpadClearEntry:187,NumpadComma:188,NumpadDecimal:189,NumpadDivide:190,NumpadEnter:191,NumpadEqual:192,NumpadMemoryAdd:193,NumpadMemoryClear:194,NumpadMemoryRecall:195,NumpadMemoryStore:196,NumpadMemorySubtract:197,NumpadMultiply:198,NumpadParenLeft:199,NumpadParenRight:200,NumpadSubtract:201,Open:202,PageDown:203,PageUp:204,Paste:205,Pause:206,Period:207,Power:208,PrintScreen:209,PrivacyScreenToggle:210,Props:211,Quote:212,Resume:213,ScrollLock:214,Select:215,SelectTask:216,Semicolon:217,ShiftLeft:218,ShiftRight:219,ShowAllWindows:220,Slash:221,Sleep:222,Space:223,Super:224,Suspend:225,Tab:226,Turbo:227,Undo:228,WakeUp:229,ZoomToggle:230}
-B.pQ=new A.aK(B.Fx,[B.tS,B.ty,B.ca,B.cc,B.rY,B.rX,B.rW,B.rZ,B.tG,B.tE,B.tF,B.ry,B.rv,B.ro,B.rt,B.ru,B.u7,B.u6,B.us,B.uw,B.ut,B.ur,B.uv,B.uq,B.uu,B.bG,B.rz,B.tg,B.c8,B.d9,B.tL,B.tB,B.tA,B.rT,B.rm,B.rd,B.re,B.rf,B.rg,B.rh,B.ri,B.rj,B.rk,B.rl,B.u5,B.ug,B.rU,B.rn,B.rs,B.hD,B.hD,B.rC,B.rL,B.rM,B.rN,B.tj,B.tk,B.tl,B.tm,B.tn,B.to,B.tp,B.rD,B.tq,B.tr,B.ts,B.tt,B.tu,B.rE,B.rF,B.rG,B.rH,B.rI,B.rJ,B.rK,B.tD,B.d8,B.qd,B.qj,B.qs,B.qt,B.qu,B.qv,B.qw,B.qx,B.qy,B.qk,B.ql,B.qm,B.qn,B.qo,B.qp,B.qq,B.qr,B.qz,B.qA,B.qB,B.qC,B.qD,B.qE,B.qF,B.qG,B.qH,B.qI,B.qJ,B.qK,B.qL,B.qM,B.qN,B.tw,B.rR,B.qb,B.rQ,B.tf,B.tI,B.tK,B.tJ,B.qO,B.qP,B.qQ,B.qR,B.qS,B.qT,B.qU,B.qV,B.qW,B.qX,B.qY,B.qZ,B.r_,B.r0,B.r1,B.r2,B.r3,B.r4,B.r5,B.r6,B.r7,B.r8,B.r9,B.ra,B.rb,B.rc,B.uB,B.tN,B.tO,B.tP,B.tQ,B.tR,B.ul,B.uk,B.up,B.um,B.uj,B.uo,B.uz,B.uy,B.uA,B.ub,B.u9,B.u8,B.uh,B.ua,B.uc,B.ui,B.uf,B.ud,B.ue,B.cb,B.db,B.qi,B.rr,B.tM,B.es,B.td,B.t4,B.t5,B.t6,B.t7,B.t8,B.t9,B.ta,B.tb,B.tc,B.t2,B.tW,B.u1,B.u2,B.tH,B.te,B.t_,B.t3,B.ti,B.u_,B.tZ,B.tY,B.tX,B.u0,B.t0,B.tU,B.tV,B.t1,B.tv,B.rV,B.rS,B.tC,B.rP,B.rA,B.th,B.rO,B.qh,B.tT,B.rx,B.qf,B.er,B.tx,B.un,B.rw,B.c9,B.da,B.uC,B.rB,B.u3,B.rq,B.qc,B.qe,B.rp,B.qg,B.tz,B.u4,B.ux],A.a0("aK<t,j>"))
-B.Fp={"\nRosana\nG\xe1s e Queijo":0}
-B.pR=new A.aK(B.Fp,["14991919837"],t.w)
-B.Fy={KeyA:0,KeyB:1,KeyC:2,KeyD:3,KeyE:4,KeyF:5,KeyG:6,KeyH:7,KeyI:8,KeyJ:9,KeyK:10,KeyL:11,KeyM:12,KeyN:13,KeyO:14,KeyP:15,KeyQ:16,KeyR:17,KeyS:18,KeyT:19,KeyU:20,KeyV:21,KeyW:22,KeyX:23,KeyY:24,KeyZ:25,Digit1:26,Digit2:27,Digit3:28,Digit4:29,Digit5:30,Digit6:31,Digit7:32,Digit8:33,Digit9:34,Digit0:35,Minus:36,Equal:37,BracketLeft:38,BracketRight:39,Backslash:40,Semicolon:41,Quote:42,Backquote:43,Comma:44,Period:45,Slash:46}
-B.pS=new A.aK(B.Fy,["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z","1","2","3","4","5","6","7","8","9","0","-","=","[","]","\\",";","'","`",",",".","/"],t.w)
-B.Fz={"\nLuana\nCabeleireira":0}
-B.pT=new A.aK(B.Fz,["14998385283"],t.w)
+B.EV=new A.c6([B.i6,B.r,B.i3,B.r,B.i4,B.r,B.i5,B.r,B.vA,B.r,B.vx,B.r,B.vy,B.r,B.vz,B.r,B.i2,B.r,B.i7,B.r,B.eM,B.r,B.eL,B.r,B.eK,B.r,B.eN,B.r,B.eO,B.r,B.eJ,B.r,B.vt,B.r,B.vu,B.r,B.vv,B.r,B.vw,B.r,B.dp,B.r,B.dq,B.r,B.eI,B.r,B.eH,B.r,B.vC,B.r,B.vB,B.r,B.eP,B.r,B.eG,B.r],t.Fp)
+B.FC={in:0,iw:1,ji:2,jw:3,mo:4,aam:5,adp:6,aue:7,ayx:8,bgm:9,bjd:10,ccq:11,cjr:12,cka:13,cmk:14,coy:15,cqu:16,drh:17,drw:18,gav:19,gfx:20,ggn:21,gti:22,guv:23,hrr:24,ibi:25,ilw:26,jeg:27,kgc:28,kgh:29,koj:30,krm:31,ktr:32,kvs:33,kwq:34,kxe:35,kzj:36,kzt:37,lii:38,lmm:39,meg:40,mst:41,mwj:42,myt:43,nad:44,ncp:45,nnx:46,nts:47,oun:48,pcr:49,pmc:50,pmu:51,ppa:52,ppr:53,pry:54,puz:55,sca:56,skk:57,tdu:58,thc:59,thx:60,tie:61,tkk:62,tlw:63,tmp:64,tne:65,tnf:66,tsf:67,uok:68,xba:69,xia:70,xkh:71,xsj:72,ybd:73,yma:74,ymt:75,yos:76,yuu:77}
+B.aY=new A.aK(B.FC,["id","he","yi","jv","ro","aas","dz","ktz","nun","bcg","drl","rki","mom","cmr","xch","pij","quh","khk","prs","dev","vaj","gvr","nyc","duz","jal","opa","gal","oyb","tdf","kml","kwv","bmf","dtp","gdj","yam","tvd","dtp","dtp","raq","rmx","cir","mry","vaj","mry","xny","kdz","ngv","pij","vaj","adx","huw","phr","bfy","lcq","prt","pub","hle","oyb","dtp","tpo","oyb","ras","twm","weo","tyj","kak","prs","taj","ema","cax","acn","waw","suj","rki","lrr","mtm","zom","yug"],t.w)
+B.Fv={Abort:0,Again:1,AltLeft:2,AltRight:3,ArrowDown:4,ArrowLeft:5,ArrowRight:6,ArrowUp:7,AudioVolumeDown:8,AudioVolumeMute:9,AudioVolumeUp:10,Backquote:11,Backslash:12,Backspace:13,BracketLeft:14,BracketRight:15,BrightnessDown:16,BrightnessUp:17,BrowserBack:18,BrowserFavorites:19,BrowserForward:20,BrowserHome:21,BrowserRefresh:22,BrowserSearch:23,BrowserStop:24,CapsLock:25,Comma:26,ContextMenu:27,ControlLeft:28,ControlRight:29,Convert:30,Copy:31,Cut:32,Delete:33,Digit0:34,Digit1:35,Digit2:36,Digit3:37,Digit4:38,Digit5:39,Digit6:40,Digit7:41,Digit8:42,Digit9:43,DisplayToggleIntExt:44,Eject:45,End:46,Enter:47,Equal:48,Escape:49,Esc:50,F1:51,F10:52,F11:53,F12:54,F13:55,F14:56,F15:57,F16:58,F17:59,F18:60,F19:61,F2:62,F20:63,F21:64,F22:65,F23:66,F24:67,F3:68,F4:69,F5:70,F6:71,F7:72,F8:73,F9:74,Find:75,Fn:76,FnLock:77,GameButton1:78,GameButton10:79,GameButton11:80,GameButton12:81,GameButton13:82,GameButton14:83,GameButton15:84,GameButton16:85,GameButton2:86,GameButton3:87,GameButton4:88,GameButton5:89,GameButton6:90,GameButton7:91,GameButton8:92,GameButton9:93,GameButtonA:94,GameButtonB:95,GameButtonC:96,GameButtonLeft1:97,GameButtonLeft2:98,GameButtonMode:99,GameButtonRight1:100,GameButtonRight2:101,GameButtonSelect:102,GameButtonStart:103,GameButtonThumbLeft:104,GameButtonThumbRight:105,GameButtonX:106,GameButtonY:107,GameButtonZ:108,Help:109,Home:110,Hyper:111,Insert:112,IntlBackslash:113,IntlRo:114,IntlYen:115,KanaMode:116,KeyA:117,KeyB:118,KeyC:119,KeyD:120,KeyE:121,KeyF:122,KeyG:123,KeyH:124,KeyI:125,KeyJ:126,KeyK:127,KeyL:128,KeyM:129,KeyN:130,KeyO:131,KeyP:132,KeyQ:133,KeyR:134,KeyS:135,KeyT:136,KeyU:137,KeyV:138,KeyW:139,KeyX:140,KeyY:141,KeyZ:142,KeyboardLayoutSelect:143,Lang1:144,Lang2:145,Lang3:146,Lang4:147,Lang5:148,LaunchApp1:149,LaunchApp2:150,LaunchAssistant:151,LaunchControlPanel:152,LaunchMail:153,LaunchScreenSaver:154,MailForward:155,MailReply:156,MailSend:157,MediaFastForward:158,MediaPause:159,MediaPlay:160,MediaPlayPause:161,MediaRecord:162,MediaRewind:163,MediaSelect:164,MediaStop:165,MediaTrackNext:166,MediaTrackPrevious:167,MetaLeft:168,MetaRight:169,MicrophoneMuteToggle:170,Minus:171,NonConvert:172,NumLock:173,Numpad0:174,Numpad1:175,Numpad2:176,Numpad3:177,Numpad4:178,Numpad5:179,Numpad6:180,Numpad7:181,Numpad8:182,Numpad9:183,NumpadAdd:184,NumpadBackspace:185,NumpadClear:186,NumpadClearEntry:187,NumpadComma:188,NumpadDecimal:189,NumpadDivide:190,NumpadEnter:191,NumpadEqual:192,NumpadMemoryAdd:193,NumpadMemoryClear:194,NumpadMemoryRecall:195,NumpadMemoryStore:196,NumpadMemorySubtract:197,NumpadMultiply:198,NumpadParenLeft:199,NumpadParenRight:200,NumpadSubtract:201,Open:202,PageDown:203,PageUp:204,Paste:205,Pause:206,Period:207,Power:208,PrintScreen:209,PrivacyScreenToggle:210,Props:211,Quote:212,Resume:213,ScrollLock:214,Select:215,SelectTask:216,Semicolon:217,ShiftLeft:218,ShiftRight:219,ShowAllWindows:220,Slash:221,Sleep:222,Space:223,Super:224,Suspend:225,Tab:226,Turbo:227,Undo:228,WakeUp:229,ZoomToggle:230}
+B.pQ=new A.aK(B.Fv,[B.tS,B.ty,B.ca,B.cc,B.rY,B.rX,B.rW,B.rZ,B.tG,B.tE,B.tF,B.ry,B.rv,B.ro,B.rt,B.ru,B.u7,B.u6,B.us,B.uw,B.ut,B.ur,B.uv,B.uq,B.uu,B.bG,B.rz,B.tg,B.c8,B.d9,B.tL,B.tB,B.tA,B.rT,B.rm,B.rd,B.re,B.rf,B.rg,B.rh,B.ri,B.rj,B.rk,B.rl,B.u5,B.ug,B.rU,B.rn,B.rs,B.hD,B.hD,B.rC,B.rL,B.rM,B.rN,B.tj,B.tk,B.tl,B.tm,B.tn,B.to,B.tp,B.rD,B.tq,B.tr,B.ts,B.tt,B.tu,B.rE,B.rF,B.rG,B.rH,B.rI,B.rJ,B.rK,B.tD,B.d8,B.qd,B.qj,B.qs,B.qt,B.qu,B.qv,B.qw,B.qx,B.qy,B.qk,B.ql,B.qm,B.qn,B.qo,B.qp,B.qq,B.qr,B.qz,B.qA,B.qB,B.qC,B.qD,B.qE,B.qF,B.qG,B.qH,B.qI,B.qJ,B.qK,B.qL,B.qM,B.qN,B.tw,B.rR,B.qb,B.rQ,B.tf,B.tI,B.tK,B.tJ,B.qO,B.qP,B.qQ,B.qR,B.qS,B.qT,B.qU,B.qV,B.qW,B.qX,B.qY,B.qZ,B.r_,B.r0,B.r1,B.r2,B.r3,B.r4,B.r5,B.r6,B.r7,B.r8,B.r9,B.ra,B.rb,B.rc,B.uB,B.tN,B.tO,B.tP,B.tQ,B.tR,B.ul,B.uk,B.up,B.um,B.uj,B.uo,B.uz,B.uy,B.uA,B.ub,B.u9,B.u8,B.uh,B.ua,B.uc,B.ui,B.uf,B.ud,B.ue,B.cb,B.db,B.qi,B.rr,B.tM,B.es,B.td,B.t4,B.t5,B.t6,B.t7,B.t8,B.t9,B.ta,B.tb,B.tc,B.t2,B.tW,B.u1,B.u2,B.tH,B.te,B.t_,B.t3,B.ti,B.u_,B.tZ,B.tY,B.tX,B.u0,B.t0,B.tU,B.tV,B.t1,B.tv,B.rV,B.rS,B.tC,B.rP,B.rA,B.th,B.rO,B.qh,B.tT,B.rx,B.qf,B.er,B.tx,B.un,B.rw,B.c9,B.da,B.uC,B.rB,B.u3,B.rq,B.qc,B.qe,B.rp,B.qg,B.tz,B.u4,B.ux],A.a0("aK<t,j>"))
+B.Fo={"\nRosana\nG\xe1s e Queijo":0}
+B.pR=new A.aK(B.Fo,["14991919837"],t.w)
+B.Fw={KeyA:0,KeyB:1,KeyC:2,KeyD:3,KeyE:4,KeyF:5,KeyG:6,KeyH:7,KeyI:8,KeyJ:9,KeyK:10,KeyL:11,KeyM:12,KeyN:13,KeyO:14,KeyP:15,KeyQ:16,KeyR:17,KeyS:18,KeyT:19,KeyU:20,KeyV:21,KeyW:22,KeyX:23,KeyY:24,KeyZ:25,Digit1:26,Digit2:27,Digit3:28,Digit4:29,Digit5:30,Digit6:31,Digit7:32,Digit8:33,Digit9:34,Digit0:35,Minus:36,Equal:37,BracketLeft:38,BracketRight:39,Backslash:40,Semicolon:41,Quote:42,Backquote:43,Comma:44,Period:45,Slash:46}
+B.pS=new A.aK(B.Fw,["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z","1","2","3","4","5","6","7","8","9","0","-","=","[","]","\\",";","'","`",",",".","/"],t.w)
+B.Fx={"\nLuana\nCabeleireira":0}
+B.pT=new A.aK(B.Fx,["14998385283"],t.w)
+B.FF={"\nAna Paula\nImpress\xf5es, Xerox...":0,"\nDaiana\nManicure e Depiladora":1,"\nLuana\nGeladinho Gourmet":2,"\nDouglas Rocha\nLimpeza de Terrenos":3,"\nGeiza Fernanda\nDesigner Gr\xe1fico":4,"\nRosana\nG\xe1s e Queijo":5,"\nPaulinho\nBorracharia Manchester":6,"\nAndr\xe9 Personaliza\xe7\xf5es\n":7,"\nLeila Lanches\nSabor Incompar\xe1vel":8,"\nAna Paula\nPersonaliza\xe7\xf5es para Festas":9,"\nMilene\nBolos e Doces":10,"\nAline\nChurros Gourmet":11,"\nAna\nDisk 24h":12,"\nFernanda\nEngenheira Civil":13}
+B.EW=new A.aK(B.FF,["assets/anaXerox.jpeg","assets/daianaManicure.jpeg","assets/luanaGelinho.jpeg","assets/douglasJardinagem.png","assets/geizaDesigner.png","assets/rosanaGas.png","assets/paulinhoBorracharia.png","assets/andre.png","assets/leilaLanches.png","assets/anaPersonalizacao.jpeg","assets/mileneBolos.jpeg","assets/alineChurros.jpeg","assets/anaDisk.jpeg","fernandaEngenheeira.png"],t.w)
 B.BG=A.a(s([42,null,null,8589935146]),t.Z)
 B.BH=A.a(s([43,null,null,8589935147]),t.Z)
 B.BI=A.a(s([45,null,null,8589935149]),t.Z)
@@ -71843,8 +71843,8 @@ B.Cr=A.a(s([B.cV,null,null,B.hk]),t.L)
 B.CM=A.a(s([B.cW,null,null,B.hq]),t.L)
 B.CQ=A.a(s([B.bF,B.bF,B.c5,null]),t.L)
 B.EX=new A.c6(["*",B.CS,"+",B.CT,"-",B.CU,".",B.CV,"/",B.CW,"0",B.Cc,"1",B.Cd,"2",B.Ce,"3",B.Cf,"4",B.Cg,"5",B.Ch,"6",B.Ci,"7",B.Cj,"8",B.D0,"9",B.D1,"Alt",B.CN,"AltGraph",B.D2,"ArrowDown",B.Cm,"ArrowLeft",B.Cn,"ArrowRight",B.Co,"ArrowUp",B.Cx,"Clear",B.CK,"Control",B.CO,"Delete",B.Cb,"End",B.Cp,"Enter",B.CX,"Home",B.Cq,"Insert",B.CL,"Meta",B.CP,"PageDown",B.Cr,"PageUp",B.CM,"Shift",B.CQ],A.a0("c6<t,L<d?>>"))
-B.FE={"\nGeiza Fernanda\nDesigner Gr\xe1fico":0,"\nAndr\xe9\n Personaliza\xe7\xe3o em Paredes":1,"\nAna Paula\nPersonaliza\xe7\xf5es para Festas":2}
-B.pV=new A.aK(B.FE,["14996553323","14996742314","14998320366"],t.w)
+B.FD={"\nGeiza Fernanda\nDesigner Gr\xe1fico":0,"\nAndr\xe9\n Personaliza\xe7\xe3o em Paredes":1,"\nAna Paula\nPersonaliza\xe7\xf5es para Festas":2}
+B.pV=new A.aK(B.FD,["14996553323","14996742314","14998320366"],t.w)
 B.EY=new A.u7(null,null,null,null,null,null,null,null)
 B.z4=new A.u(4284790262)
 B.yW=new A.u(4282557941)
@@ -72116,21 +72116,21 @@ B.HS=new A.dl([B.aQ,B.aG,B.bL],A.a0("dl<cM>"))
 B.uK=new A.hN(3,"invertedStylus")
 B.vj=new A.dl([B.cd,B.hI,B.uK,B.bp,B.hJ],t.Lu)
 B.HT=new A.dl([B.Y],t.b4)
-B.FA={click:0,keyup:1,keydown:2,mouseup:3,mousedown:4,pointerdown:5,pointerup:6}
-B.HU=new A.ey(B.FA,7,t.fF)
+B.Fy={click:0,keyup:1,keydown:2,mouseup:3,mousedown:4,pointerdown:5,pointerup:6}
+B.HU=new A.ey(B.Fy,7,t.fF)
 B.HV=new A.dl([32,8203],t.Ih)
-B.Fo={click:0,touchstart:1,touchend:2,pointerdown:3,pointermove:4,pointerup:5}
-B.HW=new A.ey(B.Fo,6,t.fF)
-B.FF={javascript:0}
-B.HX=new A.ey(B.FF,1,t.fF)
+B.Fn={click:0,touchstart:1,touchend:2,pointerdown:3,pointermove:4,pointerup:5}
+B.HW=new A.ey(B.Fn,6,t.fF)
+B.FE={javascript:0}
+B.HX=new A.ey(B.FE,1,t.fF)
 B.HY=new A.dl([B.uK,B.hI,B.cd,B.hJ,B.bp],t.Lu)
 B.HZ=new A.dl([B.a7],t.b4)
-B.Fu={"canvaskit.js":0}
-B.I_=new A.ey(B.Fu,1,t.fF)
+B.Ft={"canvaskit.js":0}
+B.I_=new A.ey(B.Ft,1,t.fF)
 B.I0=new A.dl([10,11,12,13,133,8232,8233],t.Ih)
 B.I1=new A.ey(B.aO,0,A.a0("ey<cM>"))
-B.Fq={mailto:0,tel:1,sms:2}
-B.vk=new A.ey(B.Fq,3,t.fF)
+B.Fp={mailto:0,tel:1,sms:2}
+B.vk=new A.ey(B.Fp,3,t.fF)
 B.I2=new A.dl([B.X],t.b4)
 B.FN={serif:0,"sans-serif":1,monospace:2,cursive:3,fantasy:4,"system-ui":5,math:6,emoji:7,fangsong:8}
 B.I3=new A.ey(B.FN,9,t.fF)
@@ -72850,7 +72850,7 @@ $.aq3=A.a([0.015176349177441876,0.045529047532325624,0.07588174588720938,0.10623
 $.aoo=function(){var s=t.n
 return A.a([A.a([0.41233895,0.35762064,0.18051042],s),A.a([0.2126,0.7152,0.0722],s),A.a([0.01932141,0.11916382,0.95034478],s)],t.zg)}()
 $.QJ=A.a([95.047,100,108.883],t.n)
-$.axQ=A.a([B.pA,B.pF,B.pT,B.pO,B.pG,B.pC,B.pP,B.pR,B.py,B.pE,B.pH,B.pB,B.pz,B.pI,B.pD,B.pV],A.a0("x<aD<t,t>>"))
+$.axQ=A.a([B.pA,B.pG,B.pT,B.pP,B.pH,B.pC,B.pD,B.pR,B.py,B.pF,B.pI,B.pB,B.pz,B.pJ,B.pE,B.pV],A.a0("x<aD<t,t>>"))
 $.akJ=A.a(["assets/anaXerox.jpeg","assets/daianaManicure.jpeg"],t.s)
 $.n8=function(){var s=t.s
 return[A.a(["CPFL            ","0800-010-10-10  "],s),A.a(["SAMU            ","192             "],s),A.a(["DAE BAURU       ","0800-7710-195   "],s),A.a(["POL\xcdCIA CIVIL   ","147             "],s),A.a(["POLICIA MILITAR ","190             "],s),A.a(["BOMBEIROS       ","193             "],s),A.a(["POUPATEMPO     ","(11) 4135-9700 "],s),A.a(["DEN\xdaNCIA AN\xd4NIMA","181             "],s),A.a(["PROCON          ","151             "],s),A.a(["CRAS BAURU","(14) 32397775"],s)]}()
@@ -73223,7 +73223,7 @@ q.m(0,B.Ie,B.jc)
 return q})
 s($,"ayT","all",()=>{var q,p,o,n=t.vz,m=A.z(t.Vz,n)
 for(q=A.a0("ag"),p=0;p<2;++p){o=B.h9[p]
-m.K(0,A.aH([A.d8(B.aE,!1,!1,!1,o),B.r,A.d8(B.as,!1,!1,!1,o),B.r,A.d8(B.aE,!0,!1,!1,o),B.r,A.d8(B.as,!0,!1,!1,o),B.r,A.d8(B.aE,!1,!0,!1,o),B.r,A.d8(B.as,!1,!0,!1,o),B.r,A.d8(B.aE,!1,!1,!0,o),B.r,A.d8(B.as,!1,!1,!0,o),B.r],q,n))}m.K(0,B.EW)
+m.K(0,A.aH([A.d8(B.aE,!1,!1,!1,o),B.r,A.d8(B.as,!1,!1,!1,o),B.r,A.d8(B.aE,!0,!1,!1,o),B.r,A.d8(B.as,!0,!1,!1,o),B.r,A.d8(B.aE,!1,!0,!1,o),B.r,A.d8(B.as,!1,!0,!1,o),B.r,A.d8(B.aE,!1,!1,!0,o),B.r,A.d8(B.as,!1,!1,!0,o),B.r],q,n))}m.K(0,B.EV)
 m.m(0,B.vD,B.r)
 m.m(0,B.vH,B.r)
 m.m(0,B.vE,B.r)
