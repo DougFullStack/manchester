@@ -67099,7 +67099,7 @@ else{r=A.E(a4,d,a3).w
 r=A.bh(d,new A.jM(B.kH,d),B.l,d,d,d,d,A.E(a4,d,a3).w.a.b*0.6,d,d,d,d,r.a.a*0.3)
 p=A.E(a4,d,a3).w
 p=A.dI(A.a([r,A.bh(d,new A.jM(B.kN,d),B.l,d,d,d,d,A.E(a4,d,a3).w.a.b*0.6,d,d,d,d,p.a.a*0.3)],a0),B.v,B.aP,B.w)
-r=p}s=A.bh(d,A.wk(B.E,A.a([A.cB(A.a([s,r,A.E(a4,d,a3).w.a.a<600?new A.bf(new A.aQ(15,50,15,15),A.bA("Ao clicar na imagem do cart\xe3o de visita abaixo,\nvoc\xea ser\xe1 direcionado ao whatsapp correspondente.",A.cx(d,d,B.jR,d,d,d,d,d,d,d,d,(A.E(a4,d,a3).w.a.a+A.E(a4,d,a3).w.a.b)*0.015,d,d,B.m,d,d,!0,d,d,d,d,d,d,d,d),B.a6,d),d):A.bh(d,d,B.l,d,d,d,d,d,d,d,d,d,d)],a0),B.v,B.an,B.w)],a0),B.ak,B.eS),B.l,d,d,new A.b7(d,q,d,d,d,d,B.x),d,d,d,d,d,d,d)
+r=p}s=A.bh(d,A.wk(B.E,A.a([A.cB(A.a([s,r,A.E(a4,d,a3).w.a.a<600?new A.bf(new A.aQ(5,5,5,5),A.bA("Ao clicar na imagem do cart\xe3o de visita abaixo,\nvoc\xea ser\xe1 direcionado ao whatsapp correspondente.",A.cx(d,d,B.jR,d,d,d,d,d,d,d,d,(A.E(a4,d,a3).w.a.a+A.E(a4,d,a3).w.a.b)*0.01,d,d,B.m,d,d,!0,d,d,d,d,d,d,d,d),B.a6,d),d):A.bh(d,d,B.l,d,d,d,d,d,d,d,d,d,d)],a0),B.v,B.an,B.w)],a0),B.ak,B.eS),B.l,d,d,new A.b7(d,q,d,d,d,d,B.x),d,d,d,d,d,d,d)
 r=A.fG(new A.iw(A.W(51,0,0,0),B.bu),B.Q,B.bW)
 r=A.bh(d,A.bh(d,B.B9,B.l,d,d,d,d,d,d,d,d,d,d),B.l,d,d,new A.b7(d,r,d,d,d,d,B.x),d,d,d,d,d,d,d)
 q=A.fG(new A.iw(A.W(51,0,0,0),B.bu),B.Q,B.bW)
