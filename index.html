@@ -126,11 +126,15 @@
                 images: ["assets/paulinhoBorracharia.png"],
                 contact: "+5514996463889"
             },
-            "Area de lazer WR": {
+            "Ferreira Gás": {
+                images: ["assets/ferreiraGas.jpeg"],
+                contact: "+5514988367747"
+            },
+            "Área de lazer WR": {
                 images: ["assets/lazerWR.jpeg","assets/lazerWR2.jpeg","assets/lazerWR3.jpeg","assets/lazerWR4.jpeg","assets/lazerWR5.jpeg","assets/lazerWR6.jpeg","assets/lazerWR7.jpeg","assets/lazerWR8.jpeg","assets/lazerWR9.jpeg"],
                 contact: "+5514991740808"
             },
-             "Luzia Orion Bolos e Doces": {
+            "Luzia Orion Bolos e Doces": {
                 images: ["assets/luziaBolos.jpeg","assets/luziaBolos2.jpeg","assets/luziaBolos3.jpeg","assets/luziaBolos4.jpeg","assets/luziaBolos5.jpeg","assets/luziaBolos6.jpeg","assets/luziaBolos7.jpeg","assets/luziaBolos8.jpeg","assets/luziaBolos9.jpeg","assets/luziaBolos10.jpeg","assets/luziaBolos11.jpeg"],
                 contact: "+5514991938133"
             },
@@ -188,6 +192,11 @@
             }
         };
 
+        // Função para remover acentos e transformar em minúsculas
+        function normalizeText(text) {
+            return text.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+        }
+
         // Função para exibir nomes
         function displayNames(namesToDisplay) {
             const nameList = document.getElementById('name-list');
@@ -197,21 +206,29 @@
                 // Exibe mensagem quando não há nomes para exibir
                 const messageContainer = document.createElement('div');
                 messageContainer.classList.add('message-container');
-                
+
                 const messageText = document.createElement('p');
                 messageText.textContent = `Escreva na caixa de pesquisa o que procura, como por exemplo "Borracharia". 
                                            Se não encontrar, é porque ainda não foi cadastrado. 
                                            Para cadastrar, entre em contato com o administrador do grupo ou clique no botão abaixo.
                                            Note que você pode adicionar várias imagens...`;
-                
+
                 const cadastrarButton = document.createElement('button');
                 cadastrarButton.textContent = 'Cadastrar Novo';
                 cadastrarButton.onclick = cadastrarNovo;
-                
+
                 messageContainer.appendChild(messageText);
                 messageContainer.appendChild(cadastrarButton);
-                
+
                 nameList.appendChild(messageContainer);
+
+                // Exibe a seção de nomes após a pesquisa ser iniciada
+                const nameSection = document.getElementById('nameSection');
+                nameSection.style.display = 'block';
+
+                // Esconde a mensagem inicial
+                const initialMessage = document.getElementById('initialMessage');
+                initialMessage.style.display = 'none';
             } else {
                 namesToDisplay.forEach(name => {
                     const listItem = document.createElement('li');
@@ -258,15 +275,15 @@
 
                     nameList.appendChild(listItem);
                 });
+
+                // Exibe a seção de nomes após a pesquisa ser iniciada
+                const nameSection = document.getElementById('nameSection');
+                nameSection.style.display = 'block';
+
+                // Esconde a mensagem inicial
+                const initialMessage = document.getElementById('initialMessage');
+                initialMessage.style.display = 'none';
             }
-
-            // Exibe a seção de nomes após a pesquisa ser iniciada
-            const nameSection = document.getElementById('nameSection');
-            nameSection.style.display = 'block';
-
-            // Esconde a mensagem inicial
-            const initialMessage = document.getElementById('initialMessage');
-            initialMessage.style.display = 'none';
         }
 
         // Função para exibir o link de contato para WhatsApp como um botão
@@ -303,12 +320,12 @@
 
         // Função para filtrar nomes
         function filterNames() {
-            const searchValue = document.getElementById('nameSearch').value.toLowerCase();
+            const searchValue = normalizeText(document.getElementById('nameSearch').value);
             if (searchValue === '') {
                 displayNames([]);
                 return;
             }
-            const filteredNames = Object.keys(namesWithImagesAndContacts).filter(name => name.toLowerCase().includes(searchValue));
+            const filteredNames = Object.keys(namesWithImagesAndContacts).filter(name => normalizeText(name).includes(searchValue));
             displayNames(filteredNames);
         }
 
