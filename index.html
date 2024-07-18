@@ -91,15 +91,16 @@
         }
 
         /* Estilos para dispositivos móveis */
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 768px) {
     .selection input {
         width: 100%;
         max-width: none;
     }
     .image-gallery img {
         width: auto; /* Redimensiona a largura automaticamente */
-        height: 250px; /* Altura fixa desejada */
+        height: 250px; /* Altura fixa desejada para dispositivos móveis */
         max-width: 100%; /* Evita que a imagem ultrapasse o contêiner */
+        object-fit: cover; /* Mantém a proporção e corta se necessário */
     }
 }
 @media only screen and (min-width: 769px) {
