@@ -92,16 +92,16 @@
 
         /* Estilos para dispositivos móveis */
 @media only screen and (max-width: 768px) {
-    .selection input {
+     .selection input {
         width: 100%;
         max-width: none;
     }
     .image-gallery img {
-        width: 100%; /* Largura total do contêiner pai */
-        height: auto; /* Altura automática para manter a proporção */
-        max-height: 250px; /* Altura máxima desejada */
-        object-fit: contain; /* Mantém a proporção e redimensiona a imagem */
-    }
+    width: auto; /* Redimensiona a largura automaticamente */
+    height: 250px; /* Altura fixa desejada para todas as imagens */
+    max-width: 100%; /* Evita que a imagem ultrapasse o contêiner */
+    object-fit: contain; /* Mantém a proporção e redimensiona a imagem */
+}
 }
 @media only screen and (min-width: 769px) {
     .image-gallery img {
