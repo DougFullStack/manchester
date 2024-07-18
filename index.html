@@ -97,10 +97,10 @@
         max-width: none;
     }
     .image-gallery img {
-        width: auto; /* Redimensiona a largura automaticamente */
-        height: 250px; /* Altura fixa desejada para dispositivos móveis */
-        max-width: 100%; /* Evita que a imagem ultrapasse o contêiner */
-        object-fit: cover; /* Mantém a proporção e corta se necessário */
+        width: 100%; /* Largura total do contêiner pai */
+        height: auto; /* Altura automática para manter a proporção */
+        max-height: 250px; /* Altura máxima desejada */
+        object-fit: contain; /* Mantém a proporção e redimensiona a imagem */
     }
 }
 @media only screen and (min-width: 769px) {
