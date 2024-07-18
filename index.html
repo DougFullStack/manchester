@@ -20,10 +20,10 @@
         }
         .selection input {
             padding: 10px;
-            margin: 5px;
+            margin: 5px auto; /* Centraliza horizontalmente */
             border-radius: 4px;
             border: 1px solid #ccc;
-            width: 80%; /* Ajusta a largura do campo de pesquisa */
+            width: 90%; /* Ajusta a largura do campo de pesquisa */
             max-width: 300px; /* Define uma largura máxima para melhor visualização em dispositivos menores */
         }
         .name-section {
@@ -48,8 +48,8 @@
             position: relative;
         }
         .image-gallery img {
-            max-width: 80%; /* Imagem responsiva ocupando a largura máxima possível */
-            max-height: 400px; /* Altura máxima para limitar o tamanho da imagem */
+            width: auto; /* Largura automática para manter a proporção */
+            height: 200px; /* Altura fixa para imagens em desktop */
             border-radius: 8px;
             object-fit: cover; /* Ajusta a imagem para preencher o contêiner mantendo a proporção */
             margin: 0 auto; /* Centraliza a imagem horizontalmente */
@@ -91,11 +91,25 @@
         }
 
         /* Estilos para dispositivos móveis */
-        @media only screen and (max-width: 600px) {
-            .selection input {
-                width: 100%; /* Ajusta a largura do campo de pesquisa para ocupar toda a largura disponível */
-                max-width: none; /* Remove a largura máxima para melhor visualização em dispositivos menores */
-            }
+@media only screen and (max-width: 500px) {
+    .selection input {
+        width: 100%;
+        max-width: none;
+    }
+    .image-gallery img {
+        width: auto; /* Redimensiona a largura automaticamente */
+        height: 250px; /* Altura fixa desejada */
+        max-width: 100%; /* Evita que a imagem ultrapasse o contêiner */
+    }
+}
+@media only screen and (min-width: 769px) {
+    .image-gallery img {
+        width: auto; /* Redimensiona a largura automaticamente */
+        height: 300px; /* Altura fixa desejada para PCs */
+        max-width: 100%; /* Evita que a imagem ultrapasse o contêiner */
+    }
+}
+Explicação das mudanças:
         }
     </style>
 </head>
@@ -130,7 +144,7 @@
                 images: ["assets/ferreiraGas.jpeg"],
                 contact: "+5514988367747"
             },
-            "Área de lazer WR": {
+            "Area de lazer WR": {
                 images: ["assets/lazerWR.jpeg","assets/lazerWR2.jpeg","assets/lazerWR3.jpeg","assets/lazerWR4.jpeg","assets/lazerWR5.jpeg","assets/lazerWR6.jpeg","assets/lazerWR7.jpeg","assets/lazerWR8.jpeg","assets/lazerWR9.jpeg"],
                 contact: "+5514991740808"
             },
@@ -203,32 +217,18 @@
             nameList.innerHTML = '';
 
             if (namesToDisplay.length === 0) {
-                // Exibe mensagem quando não há nomes para exibir
-                const messageContainer = document.createElement('div');
-                messageContainer.classList.add('message-container');
-
+                const messageContainer = document.createElement('li');
                 const messageText = document.createElement('p');
-                messageText.textContent = `Escreva na caixa de pesquisa o que procura, como por exemplo "Borracharia". 
-                                           Se não encontrar, é porque ainda não foi cadastrado. 
-                                           Para cadastrar, entre em contato com o administrador do grupo ou clique no botão abaixo.
-                                           Note que você pode adicionar várias imagens...`;
-
+                messageText.textContent = `Escreva na caixa de pesquisa o que procura, como por exemplo "Borracharia". Se não encontrar, é porque ainda não foi cadastrado. Para cadastrar, entre em contato com o administrador do grupo ou clique no botão abaixo. Note que você pode adicionar várias imagens...`;
+                
                 const cadastrarButton = document.createElement('button');
                 cadastrarButton.textContent = 'Cadastrar Novo';
                 cadastrarButton.onclick = cadastrarNovo;
-
+                
                 messageContainer.appendChild(messageText);
                 messageContainer.appendChild(cadastrarButton);
-
+                
                 nameList.appendChild(messageContainer);
-
-                // Exibe a seção de nomes após a pesquisa ser iniciada
-                const nameSection = document.getElementById('nameSection');
-                nameSection.style.display = 'block';
-
-                // Esconde a mensagem inicial
-                const initialMessage = document.getElementById('initialMessage');
-                initialMessage.style.display = 'none';
             } else {
                 namesToDisplay.forEach(name => {
                     const listItem = document.createElement('li');
@@ -275,15 +275,15 @@
 
                     nameList.appendChild(listItem);
                 });
-
-                // Exibe a seção de nomes após a pesquisa ser iniciada
-                const nameSection = document.getElementById('nameSection');
-                nameSection.style.display = 'block';
-
-                // Esconde a mensagem inicial
-                const initialMessage = document.getElementById('initialMessage');
-                initialMessage.style.display = 'none';
             }
+
+            // Exibe a seção de nomes após a pesquisa ser iniciada
+            const nameSection = document.getElementById('nameSection');
+            nameSection.style.display = 'block';
+
+            // Esconde a mensagem inicial
+            const initialMessage = document.getElementById('initialMessage');
+            initialMessage.style.display = 'none';
         }
 
         // Função para exibir o link de contato para WhatsApp como um botão
