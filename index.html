@@ -1,361 +1,139 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-JNDSE67DFS"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-JNDSE67DFS');
-</script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Manchester</title>
+    <title>Denúncias Comunitárias</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f0f8ff;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
             color: #333;
-            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 10px 20px;
             text-align: center;
         }
         h1 {
-            color: #4CAF50;
+            margin: 0;
         }
-        .selection {
-            margin-bottom: 20px;
+        .container {
+            flex-grow: 1;
+            width: 80%;
+            margin: 20px auto;
         }
-        .selection input {
+        .form-container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        label {
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+        input, textarea, select {
             padding: 10px;
-            margin: 5px auto; /* Centraliza horizontalmente */
+            margin-bottom: 10px;
             border-radius: 4px;
             border: 1px solid #ccc;
-            width: 90%; /* Ajusta a largura do campo de pesquisa */
-            max-width: 300px; /* Define uma largura máxima para melhor visualização em dispositivos menores */
         }
-        .name-section {
-            margin-top: 20px;
-            text-align: center;
-            display: none; /* Inicialmente oculta a seção de nomes */
-        }
-        .name-list {
-            list-style-type: none;
-            padding: 0;
-        }
-        .name-list li {
-            padding: 10px 0;
-            position: relative;
-            text-align: center; /* Centraliza o texto do nome */
-            border-top: 1px solid #ccc; /* Linha acima do nome */
-            border-bottom: 1px solid #ccc; /* Linha abaixo do contato */
-            font-weight: bold; /* Texto em negrito */
-        }
-        .image-gallery {
-            margin-top: 10px;
-            position: relative;
-        }
-        .image-gallery img {
-            width: auto; /* Largura automática para manter a proporção */
-            height: 200px; /* Altura fixa para imagens em desktop */
-            border-radius: 8px;
-            object-fit: cover; /* Ajusta a imagem para preencher o contêiner mantendo a proporção */
-            margin: 0 auto; /* Centraliza a imagem horizontalmente */
-            display: none; /* Inicialmente oculta todas as imagens */
-        }
-        .image-gallery img.active {
-            display: block; /* Exibe apenas a imagem ativa */
-        }
-        .controls {
-            display: flex;
-            justify-content: center;
-            margin-top: 5px;
-        }
-        .control-button {
-            background-color: #000;
+        button {
+            background-color: #27ae60;
             color: white;
+            padding: 15px;
             border: none;
-            padding: 5px 10px;
+            border-radius: 4px;
             cursor: pointer;
-            border-radius: 4px;
-            margin: 0 5px;
         }
-        .control-button:hover {
-            background-color: #333;
+        button:hover {
+            background-color: #2ecc71;
         }
-        .contact-link {
-            display: inline-block;
-            margin-top: 5px;
-            padding: 8px 20px;
-            background-color: #00FF00; /* Verde fluorescente */
+        footer {
+            background-color: #2c3e50;
             color: white;
-            text-decoration: none;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        .success-message {
+            background-color: #2ecc71;
+            color: white;
+            padding: 10px;
             border-radius: 4px;
-            font-weight: bold;
-            transition: background-color 0.3s ease;
-        }
-        .contact-link:hover {
-            background-color: #008000; /* Verde mais escuro ao passar o mouse */
-        }
-
-        /* Estilos para dispositivos móveis */
-@media only screen and (max-width: 768px) {
-     .selection input {
-        width: 100%;
-        max-width: none;
-    }
-    .image-gallery img {
-    width: auto; /* Redimensiona a largura automaticamente */
-    height: 250px; /* Altura fixa desejada para todas as imagens */
-    max-width: 100%; /* Evita que a imagem ultrapasse o contêiner */
-    object-fit: contain; /* Mantém a proporção e redimensiona a imagem */
-}
-}
-@media only screen and (min-width: 769px) {
-    .image-gallery img {
-        width: auto; /* Redimensiona a largura automaticamente */
-        height: 300px; /* Altura fixa desejada para PCs */
-        max-width: 100%; /* Evita que a imagem ultrapasse o contêiner */
-    }
-}
-Explicação das mudanças:
+            text-align: center;
+            margin-top: 20px;
+            display: none; /* Inicialmente escondido */
         }
     </style>
-    <link rel="icon" href="favicon.jpeg" type="image/x-icon">
 </head>
 <body>
-    <h1>Pesquisar...</h1>
-    <div class="selection">
-        <input type="text" id="nameSearch" placeholder="Pesquisar nome..." oninput="filterNames()">
+
+<header>
+    <h1>Denúncias Comunitárias</h1>
+    <p>Ajude a melhorar nossa comunidade!</p>
+</header>
+
+<div class="container">
+    <div class="form-container">
+        <h2>Registre sua Denúncia</h2>
+        <form id="denuncia-form" action="https://formspree.io/f/dublandoacena@gmail.com" method="POST" enctype="multipart/form-data">
+            <label for="tipo">Tipo de Problema:</label>
+            <select name="tipo" id="tipo">
+                <option value="Lixo">Lixo</option>
+                <option value="Buraco">Buraco</option>
+                <option value="Iluminação">Iluminação</option>
+                <option value="Esgoto">Esgoto</option>
+                <option value="Outro">Outro</option>
+            </select>
+
+            <label for="descricao">Descrição do Problema:</label>
+            <textarea name="descricao" id="descricao" rows="5" placeholder="Descreva o problema de forma detalhada"></textarea>
+
+            <label for="endereco">Endereço ou Ponto de Referência:</label>
+            <input type="text" name="endereco" id="endereco" placeholder="Ex: Rua XYZ, Bairro ABC">
+
+            <label for="imagem">Anexe uma Foto (opcional):</label>
+            <input type="file" name="imagem" id="imagem" accept="image/*">
+
+            <button type="submit">Enviar Denúncia</button>
+        </form>
+
+        <div class="success-message" id="success-message">
+            <p>Denúncia enviada com sucesso! Obrigado por ajudar a comunidade.</p>
+        </div>
     </div>
-    <div class="name-section" id="nameSection">
-        <ul id="name-list" class="name-list">
-            <!-- Nomes serão gerados aqui -->
-        </ul>
-    </div>
+</div>
 
-    <!-- Mensagem inicial antes de iniciar a pesquisa -->
-    <div id="initialMessage">
-        <p>Escreva na caixa de pesquisa o que procura, como por exemplo "Borracharia".</p>
-        <br/>
-        <p>Se não encontrar, é porque ainda não foi cadastrado.</p>
-        <br/>
-        <p>Para cadastrar, entre em contato com o administrador do grupo ou clique no botão abaixo.</p>
-        <br/>
-        <p>Note que você pode adicionar várias imagens...</p>
-        <br/>
-        <button onclick="cadastrarNovo()">Cadastrar Novo</button>
-    </div>
+<footer>
+    <p>&copy; 2025 Denúncias Comunitárias. Todos os direitos reservados.</p>
+</footer>
 
-    <script>
-        // Lista de nomes com imagens e contatos
-        const namesWithImagesAndContacts = {
-            "Paulinho Borracharia Manchester": {
-                images: ["assets/paulinhoBorracharia.png"],
-                contact: "+5514996463889"
-            },
-            "Ferreira Gás": {
-                images: ["assets/ferreiraGas.jpeg"],
-                contact: "+5514988367747"
-            },
-            "Área de lazer WR": {
-                images: ["assets/lazerWR.jpeg","assets/lazerWR2.jpeg","assets/lazerWR3.jpeg","assets/lazerWR4.jpeg","assets/lazerWR5.jpeg","assets/lazerWR6.jpeg","assets/lazerWR7.jpeg","assets/lazerWR8.jpeg","assets/lazerWR9.jpeg"],
-                contact: "+5514991740808"
-            },
-            "Luzia Orion Bolos e Doces": {
-                images: ["assets/luziaBolos.jpeg","assets/luziaBolos2.jpeg","assets/luziaBolos3.jpeg","assets/luziaBolos4.jpeg","assets/luziaBolos5.jpeg","assets/luziaBolos6.jpeg","assets/luziaBolos7.jpeg","assets/luziaBolos8.jpeg","assets/luziaBolos9.jpeg","assets/luziaBolos10.jpeg","assets/luziaBolos11.jpeg"],
-                contact: "+5514991938133"
-            },
-            "Ana Paula Impressões, Xerox...": {
-                images: ["assets/anaXerox.jpeg"],
-                contact: "+5514998320366"
-            },
-            "Daiana Manicure e Depiladora": {
-                images: ["assets/daianaManicure.jpeg"],
-                contact: "+5514998293893"
-            },
-            "Luana Geladinho Gourmet": {
-                images: ["assets/luanaGelinho.jpeg"],
-                contact: "+5514998385283"
-            },
-            "Douglas Rocha Limpeza de Terrenos/jardineiro": {
-                images: ["assets/douglasJardinagem.png"],
-                contact: "+5514988208364"
-            },
-            "Geiza Fernanda Designer Gráfico": {
-                images: ["assets/geizaDesigner.png"],
-                contact: "+5514996553323"
-            },
-            "Rosana Gás e Queijo": {
-                images: ["assets/rosanaGas.png"],
-                contact: "+5514991919837"
-            },
-            "André Personalizações": {
-                images: ["assets/andre.png"],
-                contact: "+5514996742314"
-            },
-            "Leila Lanches Sabor Incomparável": {
-                images: ["assets/leilaLanches.png"],
-                contact: "+5514998031216"
-            },
-            "Ana Paula Personalizações para Festas": {
-                images: ["assets/anaPersonalizacao.jpeg"],
-                contact: "+5514998320366"
-            },
-            "Milene Bolos e Doces": {
-                images: ["assets/mileneBolos.jpeg"],
-                contact: "+5514988098131"
-            },
-            "Aline Churros Gourmet": {
-                images: ["assets/alineChurros.jpeg"],
-                contact: "+5511966305547"
-            },
-            "Ana Disk 24h": {
-                images: ["assets/anaDisk.jpeg"],
-                contact: "+5514997144611"
-            },
-            "Fernanda Engenheira Civil": {
-                images: ["assets/fernandaEngenheeira.jpg"],
-                contact: "+5514996735517"
-            }
-        };
+<script>
+    document.getElementById("denuncia-form").addEventListener("submit", function(event) {
+        event.preventDefault(); // Evita o envio padrão para processar o feedback de sucesso
 
-        // Função para remover acentos e transformar em minúsculas
-        function normalizeText(text) {
-            return text.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
-        }
+        // Exibe a mensagem de sucesso
+        document.getElementById("success-message").style.display = "block";
 
-        // Função para exibir nomes
-        function displayNames(namesToDisplay) {
-            const nameList = document.getElementById('name-list');
-            nameList.innerHTML = '';
+        // Esconde o formulário após o envio
+        document.querySelector(".form-container").style.display = "none";
 
-            if (namesToDisplay.length === 0) {
-                const messageContainer = document.createElement('li');
-                const messageText = document.createElement('p');
-                messageText.textContent = `Escreva na caixa de pesquisa o que procura, como por exemplo "Borracharia". Se não encontrar, é porque ainda não foi cadastrado. Para cadastrar, entre em contato com o administrador do grupo ou clique no botão abaixo. Note que você pode adicionar várias imagens...`;
-                
-                const cadastrarButton = document.createElement('button');
-                cadastrarButton.textContent = 'Cadastrar Novo';
-                cadastrarButton.onclick = cadastrarNovo;
-                
-                messageContainer.appendChild(messageText);
-                messageContainer.appendChild(cadastrarButton);
-                
-                nameList.appendChild(messageContainer);
-            } else {
-                namesToDisplay.forEach(name => {
-                    const listItem = document.createElement('li');
-                    listItem.textContent = name;
+        // Envia o formulário de forma assíncrona
+        this.submit();
+    });
+</script>
 
-                    const imageGallery = document.createElement('div');
-                    imageGallery.classList.add('image-gallery');
-
-                    namesWithImagesAndContacts[name].images.forEach((imageUrl, index) => {
-                        const img = document.createElement('img');
-                        img.src = imageUrl;
-                        img.alt = name;
-                        if (index === 0) {
-                            img.classList.add('active');
-                        }
-                        imageGallery.appendChild(img);
-                    });
-
-                    listItem.appendChild(imageGallery);
-
-                    const controls = document.createElement('div');
-                    controls.classList.add('controls');
-
-                    const prevButton = document.createElement('button');
-                    prevButton.textContent = 'Anterior';
-                    prevButton.classList.add('control-button');
-                    prevButton.addEventListener('click', () => {
-                        navigateImages(listItem, 'prev');
-                    });
-                    controls.appendChild(prevButton);
-
-                    const nextButton = document.createElement('button');
-                    nextButton.textContent = 'Próxima';
-                    nextButton.classList.add('control-button');
-                    nextButton.addEventListener('click', () => {
-                        navigateImages(listItem, 'next');
-                    });
-                    controls.appendChild(nextButton);
-
-                    listItem.appendChild(controls);
-
-                    const contactLink = showContactLink(name);
-                    listItem.appendChild(contactLink);
-
-                    nameList.appendChild(listItem);
-                });
-            }
-
-            // Exibe a seção de nomes após a pesquisa ser iniciada
-            const nameSection = document.getElementById('nameSection');
-            nameSection.style.display = 'block';
-
-            // Esconde a mensagem inicial
-            const initialMessage = document.getElementById('initialMessage');
-            initialMessage.style.display = 'none';
-        }
-
-        // Função para exibir o link de contato para WhatsApp como um botão
-        function showContactLink(name) {
-            const contactLink = document.createElement('a');
-            contactLink.href = `https://api.whatsapp.com/send?phone=${encodeURIComponent(namesWithImagesAndContacts[name].contact)}&text=Olá%20${encodeURIComponent(name)},%20tudo%20bem?`;
-            contactLink.textContent = `Falar com ${name}`;
-            contactLink.classList.add('contact-link');
-            return contactLink;
-        }
-
-        // Função para navegar pelas imagens
-        function navigateImages(listItem, direction) {
-            const imageGallery = listItem.querySelector('.image-gallery');
-            const images = imageGallery.querySelectorAll('img');
-            let currentIndex = -1;
-
-            images.forEach((img, index) => {
-                if (img.classList.contains('active')) {
-                    currentIndex = index;
-                    img.classList.remove('active');
-                }
-            });
-
-            const numImages = images.length;
-            let nextIndex;
-            if (direction === 'next') {
-                nextIndex = (currentIndex + 1) % numImages;
-            } else {
-                nextIndex = (currentIndex - 1 + numImages) % numImages;
-            }
-            images[nextIndex].classList.add('active');
-        }
-
-        // Função para filtrar nomes
-        function filterNames() {
-            const searchValue = normalizeText(document.getElementById('nameSearch').value);
-            if (searchValue === '') {
-                displayNames([]);
-                return;
-            }
-            const filteredNames = Object.keys(namesWithImagesAndContacts).filter(name => normalizeText(name).includes(searchValue));
-            displayNames(filteredNames);
-        }
-
-        // Event listener para filtro de nomes ao digitar na caixa de pesquisa
-        document.getElementById('nameSearch').addEventListener('input', filterNames);
-
-        // Função para lidar com o botão de cadastrar novo
-        function cadastrarNovo() {
-            // Redireciona para o número via WhatsApp
-            window.location.href = 'https://api.whatsapp.com/send?phone=5514998375450&text=Olá,%20gostaria%20de%20cadastrar%20um%20novo%20contato.';
-        }
-
-        // Inicializa a lista de nomes ao carregar a página
-        displayNames([]);
-    </script>
 </body>
 </html>
 
