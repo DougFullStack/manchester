@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Denúncias Comunitárias</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        h1 {
+            margin: 0;
+        }
+        .container {
+            flex-grow: 1;
+            width: 80%;
+            margin: 20px auto;
+        }
+        .form-container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        label {
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+        input, textarea, select {
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+        }
+        button {
+            background-color: #27ae60;
+            color: white;
+            padding: 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #2ecc71;
+        }
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        .success-message {
+            background-color: #2ecc71;
+            color: white;
+            padding: 10px;
+            border-radius: 4px;
+            text-align: center;
+            margin-top: 20px;
+            display: none; /* Inicialmente escondido */
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Denúncias Comunitárias</h1>
+    <p>Ajude a melhorar nossa comunidade!</p>
+</header>
+
+<div class="container">
+    <div class="form-container">
+        <h2>Registre sua Denúncia</h2>
+        <form id="denuncia-form" action="https://formspree.io/f/dublandoacena@gmail.com" method="POST" enctype="multipart/form-data">
+            <label for="tipo">Tipo de Problema:</label>
+            <select name="tipo" id="tipo">
+                <option value="Lixo">Lixo</option>
+                <option value="Buraco">Buraco</option>
+                <option value="Iluminação">Iluminação</option>
+                <option value="Esgoto">Esgoto</option>
+                <option value="Outro">Outro</option>
+            </select>
+
+            <label for="descricao">Descrição do Problema:</label>
+            <textarea name="descricao" id="descricao" rows="5" placeholder="Descreva o problema de forma detalhada"></textarea>
+
+            <label for="endereco">Endereço ou Ponto de Referência:</label>
+            <input type="text" name="endereco" id="endereco" placeholder="Ex: Rua XYZ, Bairro ABC">
+
+            <label for="imagem">Anexe uma Foto (opcional):</label>
+            <input type="file" name="imagem" id="imagem" accept="image/*">
+
+            <button type="submit">Enviar Denúncia</button>
+        </form>
+
+        <div class="success-message" id="success-message">
+            <p>Denúncia enviada com sucesso! Obrigado por ajudar a comunidade.</p>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2025 Denúncias Comunitárias. Todos os direitos reservados.</p>
+</footer>
+
+<script>
+    document.getElementById("denuncia-form").addEventListener("submit", function(event) {
+        event.preventDefault(); // Evita o envio padrão para processar o feedback de sucesso
+
+        // Exibe a mensagem de sucesso
+        document.getElementById("success-message").style.display = "block";
+
+        // Esconde o formulário após o envio
+        document.querySelector(".form-container").style.display = "none";
+
+        // Envia o formulário de forma assíncrona
+        this.submit();
+    });
+</script>
+
+</body>
+</html>
+
